@@ -1,4 +1,4 @@
-package com.java.util;
+package com.soft1841.list;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +9,7 @@ import java.util.Random;
  * @author yuefan
  * 2019.3.18
  */
-public class ListTest {
+public class ListT {
     public static void main(String[] args) {
         //创建List接口的对象，元素为String类型
         List<String> list = new ArrayList<>();

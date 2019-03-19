@@ -1,7 +1,6 @@
-package com.java.util;
+package com.soft1841.list;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 /**
