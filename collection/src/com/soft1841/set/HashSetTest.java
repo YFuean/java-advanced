@@ -15,27 +15,21 @@ public class HashSetTest {
         set.add("A");
         set.add("A");
         set.add("B");
-        String s1 = new String("a");
-        String s2 = new String("b");
-        String s3 = new String("a");
 
-        set.add(s1);
-        set.add(s2);
-        set.add(s3);
         System.out.println("直接输出set集合");
         System.out.println(set);
 
         //1.for循环遍历set集合
         Object[] array = set.toArray();
         for (int i = 0; i< array.length; i++){
-            System.out.print(i);
+            System.out.println(i);
         }
         //2.Iterator迭代器遍历set集合
         Iterator<String> iterator = set.iterator();
         while (iterator.hasNext()){
-            System.out.print(iterator.next() + "   ");
+            System.out.println(iterator.next() + "   ");
         }
         //3.Lambda表达式遍历set集合
-        set.forEach(s -> System.out.print(s));
+        set.forEach(s -> System.out.println(s));
     }
 }

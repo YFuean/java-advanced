@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1609e9cb-487c-458a-aa14-2367e8375b3b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/collection/collection.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/collection/src/com/soft1841/list/ListTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/collection/src/com/soft1841/set/HashSetTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/collection/src/com/soft1841/set/TreeSetTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/collection/src/com/soft1841/excam/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/collection/src/com/soft1841/map/HashMapTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/src/com/java/util/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/collection/src/com/soft1841/list/Article.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/src/com/java/util/ListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/collection/src/com/soft1841/list/ListT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/src/com/java/util/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/collection/src/com/soft1841/list/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collection/src/com/soft1841/set/HashSetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/collection/src/com/soft1841/set/HashSetTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +36,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="24" />
+          <entry key="JAVA" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -53,8 +48,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4090" />
-          <entry key="PLAIN_TEXT" value="43" />
+          <entry key="JAVA" value="4718" />
+          <entry key="PLAIN_TEXT" value="60" />
         </counts>
       </usages-collector>
     </session>
@@ -64,8 +59,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/collection/src/com/soft1841/set/HashSetTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+            <state relative-caret-position="468">
+              <caret line="30" column="9" lean-forward="true" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/collection/src/com/soft1841/map/HashMapTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -74,6 +81,27 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/collection/src/com/soft1841/excam/Student.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+              <folding>
+                <element signature="e#287#288#0" expanded="true" />
+                <element signature="e#312#313#0" expanded="true" />
+                <element signature="e#349#350#0" expanded="true" />
+                <element signature="e#377#378#0" expanded="true" />
+                <element signature="e#408#409#0" expanded="true" />
+                <element signature="e#435#436#0" expanded="true" />
+                <element signature="e#475#476#0" expanded="true" />
+                <element signature="e#507#508#0" expanded="true" />
+                <element signature="e#553#554#0" expanded="true" />
+                <element signature="e#594#595#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/collection/src/com/soft1841/set/TreeSetTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="540">
@@ -116,6 +144,9 @@
         <option value="$PROJECT_DIR$/collection/src/com/soft1841/list/ListTest.java" />
         <option value="$PROJECT_DIR$/collection/src/com/soft1841/set/SetTest.java" />
         <option value="$PROJECT_DIR$/collection/src/com/soft1841/set/TreeSetTest.java" />
+        <option value="$PROJECT_DIR$/collection/src/com/soft1841/set/HashSetTest.java" />
+        <option value="$PROJECT_DIR$/collection/src/com/soft1841/map/HashMapTest.java" />
+        <option value="$PROJECT_DIR$/collection/src/com/soft1841/excam/Student.java" />
       </list>
     </option>
   </component>
@@ -135,9 +166,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-378" />
-    <option name="width" value="1191" />
-    <option name="height" value="1092" />
+    <option name="x" value="387" />
+    <option name="y" value="12" />
+    <option name="width" value="1307" />
+    <option name="height" value="1076" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -170,14 +202,7 @@
               <item name="collection" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="soft1841" type="462c0819:PsiDirectoryNode" />
-              <item name="list" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-advanced" type="b2602c69:ProjectViewProjectNode" />
-              <item name="collection" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="soft1841" type="462c0819:PsiDirectoryNode" />
-              <item name="set" type="462c0819:PsiDirectoryNode" />
+              <item name="map" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="java-advanced" type="b2602c69:ProjectViewProjectNode" />
@@ -187,12 +212,6 @@
               <item name="java-advanced" type="b2602c69:ProjectViewProjectNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-advanced" type="b2602c69:ProjectViewProjectNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -205,7 +224,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552958905950" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552963652364" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -228,13 +247,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TreeSetTest">
-    <configuration name="Article" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.soft1841.list.Article" />
+  <component name="RunManager" selected="Application.Student">
+    <configuration name="HashMapTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.soft1841.map.HashMapTest" />
       <module name="collection" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.soft1841.list.*" />
+          <option name="PATTERN" value="com.soft1841.map.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -255,8 +274,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ListT" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.soft1841.list.ListT" />
+    <configuration name="ListTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.soft1841.list.ListTest" />
       <module name="collection" />
       <extension name="coverage">
         <pattern>
@@ -268,12 +287,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ListTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.soft1841.list.ListTest" />
+    <configuration name="Student" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.soft1841.excam.Student" />
       <module name="collection" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.soft1841.list.*" />
+          <option name="PATTERN" value="com.soft1841.excam.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -296,17 +315,17 @@
     </configuration>
     <list>
       <item itemvalue="Application.ListTest" />
-      <item itemvalue="Application.Article" />
-      <item itemvalue="Application.ListTest" />
       <item itemvalue="Application.HashSetTest" />
       <item itemvalue="Application.TreeSetTest" />
+      <item itemvalue="Application.HashMapTest" />
+      <item itemvalue="Application.Student" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TreeSetTest" />
+        <item itemvalue="Application.Student" />
+        <item itemvalue="Application.HashMapTest" />
         <item itemvalue="Application.HashSetTest" />
-        <item itemvalue="Application.ListTest" />
-        <item itemvalue="Application.Article" />
+        <item itemvalue="Application.TreeSetTest" />
         <item itemvalue="Application.ListTest" />
       </list>
     </recent_temporary>
@@ -330,7 +349,7 @@
       <workItem from="1552910018758" duration="1303000" />
       <workItem from="1552915459396" duration="1627000" />
       <workItem from="1552947505963" duration="609000" />
-      <workItem from="1552952334215" duration="4291000" />
+      <workItem from="1552952334215" duration="8556000" />
     </task>
     <task id="LOCAL-00001" summary="Integer类的练习，进制转换底层">
       <created>1552355081254</created>
@@ -367,16 +386,24 @@
       <option name="project" value="LOCAL" />
       <updated>1552917243794</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="list和set接口学习">
+      <created>1552959247234</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1552959247234</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32732000" />
+    <option name="totallyTimeSpent" value="36997000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16976556" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12611157" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -385,7 +412,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.44463667" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.39965397" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -417,7 +444,8 @@
     <MESSAGE value="数学函数和去随机数" />
     <MESSAGE value="List练习" />
     <MESSAGE value="综合练习" />
-    <option name="LAST_COMMIT_MESSAGE" value="综合练习" />
+    <MESSAGE value="list和set接口学习" />
+    <option name="LAST_COMMIT_MESSAGE" value="list和set接口学习" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/util/src/com/java/util/Hello.java" />
@@ -480,16 +508,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collection/src/com/soft1841/list/ListTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/collection/src/com/soft1841/list/Player.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1444">
@@ -500,10 +518,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/collection/src/com/soft1841/list/ListTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/collection/src/com/soft1841/set/HashSetTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        <state relative-caret-position="468">
+          <caret line="30" column="9" lean-forward="true" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -516,6 +544,35 @@
           <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collection/src/com/soft1841/map/HashMapTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collection/src/com/soft1841/excam/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+          <folding>
+            <element signature="e#287#288#0" expanded="true" />
+            <element signature="e#312#313#0" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
+            <element signature="e#377#378#0" expanded="true" />
+            <element signature="e#408#409#0" expanded="true" />
+            <element signature="e#435#436#0" expanded="true" />
+            <element signature="e#475#476#0" expanded="true" />
+            <element signature="e#507#508#0" expanded="true" />
+            <element signature="e#553#554#0" expanded="true" />
+            <element signature="e#594#595#0" expanded="true" />
           </folding>
         </state>
       </provider>
