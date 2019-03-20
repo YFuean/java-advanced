@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.Map;
 
 /**
- * map的基础程序
+ * map的基础程序，map组和
  * @author yuefan
  * 2019.3.19
  */

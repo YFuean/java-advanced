@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 
 /**
- * List接口的基础练习
+ * List接口的基础练习，arrayList可重复列表
  * @author yuefan
  * 2019.3.19
  */

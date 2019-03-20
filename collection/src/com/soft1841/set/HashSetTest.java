@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.Set;
 
 /**
- * set接口基础程序
+ * set接口基础程序,HashSet去重
  * @author yuefan
  * 2019.3.19
  */
@@ -20,16 +20,19 @@ public class HashSetTest {
         System.out.println(set);
 
         //1.for循环遍历set集合
+        System.out.println("for循环遍历");
         Object[] array = set.toArray();
         for (int i = 0; i< array.length; i++){
-            System.out.println(i);
+            System.out.println();
         }
         //2.Iterator迭代器遍历set集合
+        System.out.println("Iterator迭代器遍历");
         Iterator<String> iterator = set.iterator();
         while (iterator.hasNext()){
             System.out.println(iterator.next() + "   ");
         }
         //3.Lambda表达式遍历set集合
+        System.out.println("Lambda表达式遍历");
         set.forEach(s -> System.out.println(s));
     }
 }

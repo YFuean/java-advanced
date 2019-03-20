@@ -57,8 +57,12 @@ public class Student {
         Iterator<Map.Entry<String,List<Student>>> iterator = map.entrySet().iterator();
         while (iterator.hasNext()){
             Map.Entry<String,List<Student>> entry = iterator.next();
-            System.out.println(entry.getKey() + "有" + entry.getValue());
-            System.out.println();
+            System.out.println(entry.getKey());
+            List<Student> list = entry.getValue();
+            for (Student s :list){
+                System.out.print("学号：" + s.getId() + "    " + "姓名：" + s.getName());
+                System.out.println();
+            }
         }
     }
 }
