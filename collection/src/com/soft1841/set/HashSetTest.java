@@ -23,16 +23,16 @@ public class HashSetTest {
         System.out.println("for循环遍历");
         Object[] array = set.toArray();
         for (int i = 0; i< array.length; i++){
-            System.out.println();
+            System.out.println(set.toArray(array));
         }
         //2.Iterator迭代器遍历set集合
         System.out.println("Iterator迭代器遍历");
         Iterator<String> iterator = set.iterator();
         while (iterator.hasNext()){
-            System.out.println(iterator.next() + "   ");
+            System.out.print(iterator.next() + "   ");
         }
         //3.Lambda表达式遍历set集合
         System.out.println("Lambda表达式遍历");
-        set.forEach(s -> System.out.println(s));
+        set.forEach(s -> System.out.print(s));
     }
 }
