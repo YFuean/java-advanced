@@ -15,17 +15,19 @@ public class FileExam {
         int minute =  calendar.get(Calendar.MINUTE);
         int second = calendar.get(Calendar.SECOND);
         String time = "-"+ hour + minute + second;
+        //获取时间为time
         System.out.println(time);
+        //获取日期为date
         System.out.println(date);
-
+        //创建文件夹
         String path = "D:/"+ date;
         File folder = new File(path);
         if (!folder.exists()){
             folder.mkdirs();
         }
-
-        File file = new File("D:/" + date + "/hello" + time + ".txt");
-        //如果file不存在，则创建新文件
+        //创建文件
+        File file = new File("D:/" + date
+                + "/hello" + time + ".txt");
         if (!file.exists()){
             file.createNewFile();
         }
