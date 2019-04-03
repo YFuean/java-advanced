@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1609e9cb-487c-458a-aa14-2367e8375b3b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/io/src/com/soft1841/BufferedStreamTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/io/src/com/soft1841/ScannerDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swing/src/com/soft1841/ImgViewFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swing/src/com/soft1841/JFileChooserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/io/src/com/soft1841/BufferedTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/io/src/com/soft1841/ImageFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/io/src/com/soft1841/ImageFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swing/src/com/soft1841/BoxLayoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/swing/src/com/soft1841/BoxLayoutTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swing/src/com/soft1841/ImgViewFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/swing/src/com/soft1841/ImgViewFrame.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,21 +18,22 @@
     <session id="2007900182">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="28" />
+          <entry key="project.closed" value="30" />
           <entry key="project.open.time.1" value="10" />
           <entry key="project.open.time.13" value="2" />
           <entry key="project.open.time.14" value="1" />
-          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.15" value="2" />
           <entry key="project.open.time.16" value="2" />
           <entry key="project.open.time.2" value="6" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.24" value="1" />
+          <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="29" />
+          <entry key="project.opened" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -43,7 +44,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="117" />
+          <entry key="JAVA" value="131" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -55,7 +56,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="13929" />
+          <entry key="JAVA" value="15088" />
           <entry key="PLAIN_TEXT" value="86" />
         </counts>
       </usages-collector>
@@ -66,22 +67,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/swing/src/com/soft1841/ImgViewFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-988">
-              <caret line="49" column="17" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
+            <state relative-caret-position="317">
+              <caret line="82" column="40" lean-forward="true" selection-start-line="82" selection-start-column="40" selection-end-line="82" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1905#1906#0" expanded="true" />
-                <element signature="e#1939#1940#0" expanded="true" />
+                <element signature="method#ImgViewFrame#0;class#ImgViewFrame#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/io/src/com/soft1841/BufferedStreamTest.java">
+        <entry file="file://$PROJECT_DIR$/io/src/com/soft1841/BufferedTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1998">
-              <caret line="67" column="43" selection-start-line="67" selection-start-column="43" selection-end-line="67" selection-end-column="43" />
+            <state relative-caret-position="240">
+              <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -89,8 +89,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/io/src/com/soft1841/ImageFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="60" column="16" lean-forward="true" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="16" />
+            <state relative-caret-position="194">
+              <caret line="62" column="13" lean-forward="true" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
               <folding>
                 <element signature="e#1811#1812#0" expanded="true" />
                 <element signature="e#1843#1844#0" expanded="true" />
@@ -100,13 +100,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/io/src/com/soft1841/ScannerDemo.java">
+        <entry file="file://$PROJECT_DIR$/io/src/com/soft1841/FileCopy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="210">
+              <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -152,7 +149,6 @@
         <option value="$PROJECT_DIR$/io/src/com/soft1841/FileExcam.java" />
         <option value="$PROJECT_DIR$/io/src/com/soft1841/FileCopy.java" />
         <option value="$PROJECT_DIR$/io/src/com/soft1841/FileExam2.java" />
-        <option value="$PROJECT_DIR$/io/src/com/soft1841/ImageFrame.java" />
         <option value="$PROJECT_DIR$/io/src/com/soft1841/FileExam.java" />
         <option value="$PROJECT_DIR$/io/src/com/soft1841/TxtCopy.java" />
         <option value="$PROJECT_DIR$/io/src/com/soft1841/OutputFile.java" />
@@ -163,8 +159,14 @@
         <option value="$PROJECT_DIR$/swing/src/com/soft1841/CardLayoutTest.java" />
         <option value="$PROJECT_DIR$/io/src/com/soft1841/ScannerDemo.java" />
         <option value="$PROJECT_DIR$/swing/src/com/soft1841/JFileChooserTest.java" />
-        <option value="$PROJECT_DIR$/swing/src/com/soft1841/ImgViewFrame.java" />
         <option value="$PROJECT_DIR$/io/src/com/soft1841/BufferedStreamTest.java" />
+        <option value="$PROJECT_DIR$/swing/src/com/soft1841/MouseAdapterImpl.java" />
+        <option value="$PROJECT_DIR$/swing/src/com/soft1841/ImgViewFrameImpl.java" />
+        <option value="$PROJECT_DIR$/swing/src/com/soft1841/MyPicture.java" />
+        <option value="$PROJECT_DIR$/swing/src/com/soft1841/BoxLayoutTest.java" />
+        <option value="$PROJECT_DIR$/io/src/com/soft1841/ImageFrame.java" />
+        <option value="$PROJECT_DIR$/swing/src/com/soft1841/ImgViewFrame.java" />
+        <option value="$PROJECT_DIR$/io/src/com/soft1841/BufferedTest.java" />
       </list>
     </option>
   </component>
@@ -184,9 +186,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="619" />
-    <option name="width" value="1307" />
-    <option name="height" value="1091" />
+    <option name="x" value="132" />
+    <option name="y" value="16" />
+    <option name="width" value="1308" />
+    <option name="height" value="1092" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -197,6 +200,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -234,13 +238,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554223398730" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554309003265" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -252,6 +255,9 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.soft1841" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\JavaStudy\java-advanced\swing\src\com\soft1841" />
     </key>
@@ -268,9 +274,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.BufferedStreamTest">
-    <configuration name="BufferedStreamTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.soft1841.BufferedStreamTest" />
+  <component name="RunManager" selected="Application.BufferedTest">
+    <configuration name="BufferedTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.soft1841.BufferedTest" />
       <module name="io" />
       <extension name="coverage">
         <pattern>
@@ -321,9 +327,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ScannerDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.soft1841.ScannerDemo" />
-      <module name="io" />
+    <configuration name="MyPicture" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.soft1841.MyPicture" />
+      <module name="swing" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.soft1841.*" />
@@ -335,19 +341,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.JFileChooserTest" />
-      <item itemvalue="Application.ScannerDemo" />
       <item itemvalue="Application.ImgViewFrame" />
       <item itemvalue="Application.ImageFrame" />
-      <item itemvalue="Application.BufferedStreamTest" />
+      <item itemvalue="Application.MyPicture" />
+      <item itemvalue="Application.JFileChooserTest" />
+      <item itemvalue="Application.BufferedTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BufferedStreamTest" />
+        <item itemvalue="Application.BufferedTest" />
         <item itemvalue="Application.ImgViewFrame" />
         <item itemvalue="Application.ImageFrame" />
-        <item itemvalue="Application.ScannerDemo" />
         <item itemvalue="Application.JFileChooserTest" />
+        <item itemvalue="Application.MyPicture" />
       </list>
     </recent_temporary>
   </component>
@@ -389,7 +395,9 @@
       <workItem from="1554113448725" duration="3653000" />
       <workItem from="1554134677580" duration="2735000" />
       <workItem from="1554163490565" duration="10056000" />
-      <workItem from="1554207657512" duration="10471000" />
+      <workItem from="1554207657512" duration="10680000" />
+      <workItem from="1554266701154" duration="10599000" />
+      <workItem from="1554302758893" duration="6004000" />
     </task>
     <task id="LOCAL-00001" summary="Integer类的练习，进制转换底层">
       <created>1552355081254</created>
@@ -496,17 +504,24 @@
       <option name="project" value="LOCAL" />
       <updated>1554137271187</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="缓冲流学习">
+      <created>1554223455572</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1554223455572</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106399000" />
+    <option name="totallyTimeSpent" value="123211000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17784964" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18027486" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -515,7 +530,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.43425605" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.37370244" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39965397" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -556,7 +571,8 @@
     <MESSAGE value="图片窗体程序" />
     <MESSAGE value="swing程序学习" />
     <MESSAGE value="卡片布局管理器练习" />
-    <option name="LAST_COMMIT_MESSAGE" value="卡片布局管理器练习" />
+    <MESSAGE value="缓冲流学习" />
+    <option name="LAST_COMMIT_MESSAGE" value="缓冲流学习" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/util/src/com/java/util/Hello.java" />
@@ -680,31 +696,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/io/src/com/soft1841/FileExam1.java" />
-    <entry file="file://$PROJECT_DIR$/io/src/com/soft1841/FileCopy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/io/src/com/soft1841/FileExam2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swing/src/com/soft1841/FlowLayoutPosition.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swing/src/com/soft1841/FlowLayoutExam.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swing/src/com/soft1841/BoxLayoutTest.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swing/src/com/soft1841/Exam.java">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/swing/src/com/soft1841/BorderLayoutPosition.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -717,9 +714,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
           <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -730,28 +724,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/swing/src/com/soft1841/FolderTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/io/FileInputStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="194" selection-start-line="194" selection-end-line="194" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swing/src/com/soft1841/JFileChooserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="38" column="44" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1120#1121#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -776,16 +752,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/io/src/com/soft1841/ScannerDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/swing/src/com/soft1841/GridLayoutTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -800,10 +766,91 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/io/src/com/soft1841/BufferedStreamTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swing/src/com/soft1841/MouseAdapterImpl.java" />
+    <entry file="file://$PROJECT_DIR$/swing/src/com/soft1841/ImgViewFrameImpl.java" />
+    <entry file="file://$PROJECT_DIR$/io/src/com/soft1841/ScannerDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swing/src/com/soft1841/FolderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swing/src/com/soft1841/FlowLayoutPosition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-26">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swing/src/com/soft1841/FlowLayoutExam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swing/src/com/soft1841/BoxLayoutTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1368">
+          <caret line="62" column="44" selection-start-line="62" selection-start-column="44" selection-end-line="62" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swing/src/com/soft1841/Exam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swing/src/com/soft1841/MyPicture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1413#1414#0" expanded="true" />
+            <element signature="e#1444#1445#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swing/src/com/soft1841/JFileChooserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="38" column="44" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1120#1121#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/io/src/com/soft1841/FileCopy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/io/src/com/soft1841/ImageFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="60" column="16" lean-forward="true" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="16" />
+        <state relative-caret-position="194">
+          <caret line="62" column="13" lean-forward="true" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
           <folding>
             <element signature="e#1811#1812#0" expanded="true" />
             <element signature="e#1843#1844#0" expanded="true" />
@@ -813,20 +860,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/swing/src/com/soft1841/ImgViewFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-988">
-          <caret line="49" column="17" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
+        <state relative-caret-position="317">
+          <caret line="82" column="40" lean-forward="true" selection-start-line="82" selection-start-column="40" selection-end-line="82" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1905#1906#0" expanded="true" />
-            <element signature="e#1939#1940#0" expanded="true" />
+            <element signature="method#ImgViewFrame#0;class#ImgViewFrame#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/io/src/com/soft1841/BufferedStreamTest.java">
+    <entry file="file://$PROJECT_DIR$/io/src/com/soft1841/BufferedTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1998">
-          <caret line="67" column="43" selection-start-line="67" selection-start-column="43" selection-end-line="67" selection-end-column="43" />
+        <state relative-caret-position="240">
+          <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
         </state>
       </provider>
     </entry>

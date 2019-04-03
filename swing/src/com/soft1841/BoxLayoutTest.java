@@ -61,14 +61,6 @@ public class BoxLayoutTest extends JFrame {
     }
 
     public static void main(String[] args) {
-//        try {
-//            BeautyEyeLNFHelper.frameBorderStyle=
-//                    BeautyEyeLNFHelper.FrameBorderStyle.osLookAndFeelDecorated;
-//            org.jb2011.lnf.beautyeye.BeautyEyeLNFHelper.launchBeautyEyeLNF();
-//
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
         new BoxLayoutTest();
     }
 

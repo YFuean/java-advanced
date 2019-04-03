@@ -3,7 +3,7 @@ package com.soft1841;
 import java.io.*;
 
 /**
- * 缓冲流学习
+ * 缓冲字符流学习
  * @author yuefan
  * 2019.4.3
  */
@@ -11,7 +11,7 @@ public class BufferedStreamTest {
     public static void main(String[] args) {
         //定义字符串数组
         String[] content = {"吃葡萄不吐葡萄皮","红鲤鱼与绿鲤鱼与驴",
-                "母猪的产后护理","Who lives in a pineapple unber the sea"};
+                "母猪的产后护理","Who lives in a pineapple under the sea"};
         //创建文件对象
         File file = new File("word.txt");
         //创建FileOutputStream对象

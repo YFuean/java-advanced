@@ -37,6 +37,10 @@ public class ImageFrame extends JFrame {
         }
         add(topPanel, BorderLayout.NORTH);
         imgLabel = new JLabel();
+
+
+
+
         //读入本地图片到到内存的字节数组
         File srcFile = new File("D:/blue.jpg");
         InputStream inputStream;
