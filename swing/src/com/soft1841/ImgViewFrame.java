@@ -1,27 +1,28 @@
 package com.soft1841;
 
 import javax.swing.*;
-import javax.swing.border.Border;
 import java.awt.*;
 import java.awt.event.*;
 import java.io.*;
 
 /**
- * 使用卡片布局实现图片浏览功能
+ * 图片浏览功能
+ * @author yuefan
+ * 2019.4.4
  */
-public class ImgViewFrame extends JFrame implements ActionListener,MouseListener{
-    private JPanel centerPanel,bottomPanel,leftPanel;
+public class ImgViewFrame extends JFrame implements ActionListener{
+    private JPanel centerPanel,bottomPanel,leftPanel,panel;
     private CardLayout cardLayout;
     private GridLayout gridLayout;
-    private JButton chooseButton,preBtn,nextBtn,firstBtn,lastBtn;
+    private JButton chooseButton;
     private JFileChooser fileChooser;
     private JLabel[] imgLabels;
     private JLabel newImgLabel;
 
     public ImgViewFrame(){
         init();
-        setTitle("卡片布局浏览图片");
-        setExtendedState(JFrame.MAXIMIZED_BOTH);
+        setTitle("浏览图片");
+        setSize(1300,900);
         setLocationRelativeTo(null);
         setVisible(true);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -29,32 +30,29 @@ public class ImgViewFrame extends JFrame implements ActionListener,MouseListener
 
     private void init(){
         chooseButton = new JButton("选择");
-//        preBtn = new JButton("前一张");
-//        nextBtn = new JButton("后一张");
-//        firstBtn = new JButton("第一张");
-//        lastBtn = new JButton("最后一张");
+        //copyButton = new JButton("备份");
         centerPanel = new JPanel();
         leftPanel = new JPanel();
         cardLayout = new CardLayout();
         newImgLabel = new JLabel();
         bottomPanel = new JPanel();
+        panel = new JPanel();
 
         centerPanel.setLayout(cardLayout);
-        //centerPanel.add(imgLabel);
         add(centerPanel,BorderLayout.CENTER);
         centerPanel.setBackground(new Color(189, 230, 247));
         centerPanel.add(newImgLabel);
 
+        panel.setBackground(new Color(73, 156, 84));
         leftPanel.setBackground(new Color(73, 156, 84));
-        leftPanel.setMaximumSize(new Dimension(600,JFrame.HEIGHT));
-        leftPanel.setMinimumSize(new Dimension(600,JFrame.HEIGHT));
-        add(leftPanel,BorderLayout.WEST);
+        panel.setMaximumSize(new Dimension(600,JFrame.HEIGHT));
+        panel.setMinimumSize(new Dimension(600,JFrame.HEIGHT));
+        chooseButton.setSize(new Dimension(600,20));
+        panel.setSize(new Dimension(600,JFrame.HEIGHT));
+        panel.add(chooseButton);
+        panel.add(leftPanel);
+        add(panel,BorderLayout.WEST);
 
-//        bottomPanel.add(firstBtn);
-//        bottomPanel.add(preBtn);
-        bottomPanel.add(chooseButton);
-//        bottomPanel.add(nextBtn);
-//        bottomPanel.add(lastBtn);
         add(bottomPanel,BorderLayout.SOUTH);
         chooseButton.addActionListener(this);
     }
@@ -75,7 +73,7 @@ public class ImgViewFrame extends JFrame implements ActionListener,MouseListener
                 InputStream inputStream;
                 byte[] bytes;
                 //创建网格布局，放入leftPanel中
-                gridLayout = new GridLayout((files.length / 3) + 1, 3, 5, 5);
+                gridLayout = new GridLayout((files.length / 3) + 1, 3, 10, 5);
                 leftPanel.setLayout(gridLayout);
                 //创建imgLabel数组
                 imgLabels = new JLabel[files.length];
@@ -92,58 +90,38 @@ public class ImgViewFrame extends JFrame implements ActionListener,MouseListener
                         Icon icon = new ImageIcon(bytes);
                         imgLabels[i].setIcon(icon);
                         leftPanel.add(imgLabels[i]);
+
                     } catch (IOException e1) {
                         JOptionPane.showMessageDialog(null, "io异常");
                     }
-                    imgLabels[i].addMouseListener(this);
+                    imgLabels[i].addMouseListener(new MouseAdapter() {
+                        @Override
+                        public void mouseClicked(MouseEvent e) {
+                            //得到按下的鼠标键
+                            int c = e.getButton();
+                            //判断是鼠标左键按下
+                            if (c == MouseEvent.BUTTON1){
+                                //指定源文件   终于得到了文件路径
+                                File srcFile = new File(fileChooser.getSelectedFile().getPath());
+                                String src = srcFile.toString();
+                                System.out.println(src);
+                                InputStream inputStream;
+                                byte[] bytes;
+                                try {
+                                    inputStream = new FileInputStream(srcFile);
+                                    bytes = new byte[(int) srcFile.length()];
+                                    inputStream.read(bytes);
+                                    //放图片
+                                    Icon newIcon = new ImageIcon(bytes);
+                                    newImgLabel.setIcon(newIcon);
+                                }catch(IOException e1) {
+                                    e1.printStackTrace();
+                                }
+                            }
+                        }
+                    });
                 }
             }
         }
-    }
-
-    @Override
-    public void mouseClicked(MouseEvent e) {
-        //得到按下的鼠标键
-        int c = e.getButton();
-        //判断是鼠标左键按下
-        if (c == MouseEvent.BUTTON1){
-            //指定源文件   终于得到了文件路径
-            File srcFile = new File(this.fileChooser.getSelectedFile().getPath());
-            String src = srcFile.toString();
-            System.out.println(src);
-//            InputStream inputStream;
-//            byte[] bytes;
-//            try {
-//                inputStream = new FileInputStream(srcFile);
-//                bytes = new byte[(int) srcFile.length()];
-//                inputStream.read(bytes);
-//                //放图片
-//                Icon newIcon = new ImageIcon(bytes);
-//                newImgLabel.setIcon(newIcon);
-//            }catch(IOException e1) {
-//                e1.printStackTrace();
-//            }
-        }
-
-    }
-
-    @Override
-    public void mousePressed(MouseEvent e) {
-
-    }
-
-    @Override
-    public void mouseReleased(MouseEvent e) {
-
-    }
-
-    @Override
-    public void mouseEntered(MouseEvent e) {
-
-    }
-
-    @Override
-    public void mouseExited(MouseEvent e) {
-
     }
 }
