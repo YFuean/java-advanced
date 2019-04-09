@@ -1,7 +1,5 @@
 package com.soft1841.exam;
 
-import javafx.application.Platform;
-
 import javax.swing.*;
 
 public class ImgThread extends Thread {

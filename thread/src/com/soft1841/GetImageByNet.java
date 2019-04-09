@@ -4,7 +4,7 @@ import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-/**
+/**K
  * 启动线程，读取网络图片
  * @author yuefan
  * 2019.4.9
