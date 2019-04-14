@@ -31,7 +31,7 @@ public class NumberThread implements Runnable{
         }
     }
 
-    //这个方法只能在run
+    //这个方法只能在run方法中实现，不然会阻塞主线程，导致页面无法响应
     void onPause(){
         synchronized (lock){
             try {

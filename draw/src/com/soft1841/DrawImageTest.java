@@ -4,15 +4,15 @@ import javax.swing.*;
 import java.awt.*;
 
 /**
- * 在JLabel中绘制图像
+ * 在窗体中绘制图像
  * 2019.4.11
  */
 public class DrawImageTest extends JFrame {
     public DrawImageTest(){
         this.setSize(480,480);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        //设置窗体为绘图面板对象
         add(new CanvasTest());
-        //设置为imgLabel绘图面板对象
         this.setTitle("绘制图像");
     }
 

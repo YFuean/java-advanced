@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1609e9cb-487c-458a-aa14-2367e8375b3b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/thread/src/com/soft1841/Number/NumberFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thread/src/com/soft1841/Number/NumberThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thread/src/com/soft1841/Light.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thread/src/img/green.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thread/src/img/red.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thread/src/img/yellow.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/draw/src/com/soft1841/DrawImageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/draw/src/com/soft1841/DrawImageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thread/src/com/soft1841/Number/NumberThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/thread/src/com/soft1841/Number/NumberThread.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,11 +20,11 @@
     <session id="2007900182">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="48" />
+          <entry key="project.closed" value="50" />
           <entry key="project.open.time.1" value="11" />
           <entry key="project.open.time.13" value="4" />
           <entry key="project.open.time.14" value="3" />
-          <entry key="project.open.time.15" value="8" />
+          <entry key="project.open.time.15" value="9" />
           <entry key="project.open.time.16" value="3" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.18" value="1" />
@@ -29,13 +33,13 @@
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.23" value="1" />
-          <entry key="project.open.time.24" value="1" />
+          <entry key="project.open.time.24" value="2" />
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="49" />
+          <entry key="project.opened" value="51" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -47,7 +51,7 @@
         <counts>
           <entry key="IDEA_MODULE" value="2" />
           <entry key="Image" value="4" />
-          <entry key="JAVA" value="247" />
+          <entry key="JAVA" value="252" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
@@ -60,7 +64,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="22996" />
+          <entry key="JAVA" value="23225" />
           <entry key="PLAIN_TEXT" value="133" />
         </counts>
       </usages-collector>
@@ -68,31 +72,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/thread/src/com/soft1841/Number/NumberThread.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/thread/src/com/soft1841/Light.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="56" column="22" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
+            <state relative-caret-position="180">
+              <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
               <folding>
-                <element signature="e#248#249#0" expanded="true" />
-                <element signature="e#287#288#0" expanded="true" />
-                <element signature="e#426#427#0" expanded="true" />
-                <element signature="e#453#454#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1462#1463#0" expanded="true" />
+                <element signature="e#1502#1503#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/thread/src/com/soft1841/Number/NumberFrame.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Documents/WeChat Files/wxid_ef1ozt61pplm22/FileStorage/File/2019-04/TraficLights.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="49" column="40" selection-start-line="49" selection-start-column="40" selection-end-line="49" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1226#1227#0" expanded="true" />
-                <element signature="e#1258#1259#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="60">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -112,8 +110,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/io/src/com/soft1841/FileExam2.java" />
-        <option value="$PROJECT_DIR$/io/src/com/soft1841/FileExam.java" />
         <option value="$PROJECT_DIR$/io/src/com/soft1841/TxtCopy.java" />
         <option value="$PROJECT_DIR$/io/src/com/soft1841/TxtReaderFram.java" />
         <option value="$PROJECT_DIR$/io/src/com/soft1841/FileExam1.java" />
@@ -160,9 +156,11 @@
         <option value="$PROJECT_DIR$/thread/src/com/soft1841/FlyPig/FlyPigTicketThread.java" />
         <option value="$PROJECT_DIR$/thread/src/com/soft1841/FlyPig/FlyPigJFrame.java" />
         <option value="$PROJECT_DIR$/thread/src/com/soft1841/exam/TimeThread.java" />
+        <option value="$PROJECT_DIR$/thread/src/com/soft1841/Number/NumberFrame.java" />
         <option value="$PROJECT_DIR$/draw/src/com/soft1841/DrawImageTest.java" />
         <option value="$PROJECT_DIR$/thread/src/com/soft1841/Number/NumberThread.java" />
-        <option value="$PROJECT_DIR$/thread/src/com/soft1841/Number/NumberFrame.java" />
+        <option value="$USER_HOME$/Documents/WeChat Files/wxid_ef1ozt61pplm22/FileStorage/File/2019-04/TraficLights.java" />
+        <option value="$PROJECT_DIR$/thread/src/com/soft1841/Light.java" />
       </list>
     </option>
   </component>
@@ -195,58 +193,30 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="java-advanced" type="b2602c69:ProjectViewProjectNode" />
-              <item name="swing" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-advanced" type="b2602c69:ProjectViewProjectNode" />
-              <item name="swing" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-advanced" type="b2602c69:ProjectViewProjectNode" />
-              <item name="swing" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="soft1841" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-advanced" type="b2602c69:ProjectViewProjectNode" />
               <item name="thread" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="java-advanced" type="b2602c69:ProjectViewProjectNode" />
               <item name="thread" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-advanced" type="b2602c69:ProjectViewProjectNode" />
-              <item name="thread" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="soft1841" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-advanced" type="b2602c69:ProjectViewProjectNode" />
-              <item name="thread" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="soft1841" type="462c0819:PsiDirectoryNode" />
-              <item name="Number" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555000044868" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555283430396" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -258,19 +228,19 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.soft1841" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JavaStudy\java-advanced\io\src\com\soft1841" />
+      <recent name="D:\JavaStudy\java-advanced\io" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\JavaStudy\java-advanced\draw\src\img" />
       <recent name="D:\JavaStudy\java-advanced\thread\src\img" />
+      <recent name="D:\JavaStudy\java-advanced\draw\src\img" />
       <recent name="D:\JavaStudy\java-advanced\thread\src\com\soft1841" />
       <recent name="D:\JavaStudy\java-advanced\swing\src\img" />
       <recent name="D:\JavaStudy\java-advanced\swing\src\com\soft1841" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\JavaStudy\java-advanced\io\src\com\soft1841" />
-      <recent name="D:\JavaStudy\java-advanced\io" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.soft1841" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -285,7 +255,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.NumberFrame">
+  <component name="RunManager" selected="Application.Light">
     <configuration name="DrawImageTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.soft1841.DrawImageTest" />
       <module name="draw" />
@@ -305,6 +275,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.soft1841.FlyPig.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Light" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.soft1841.Light" />
+      <module name="thread" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.soft1841.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -338,33 +321,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TicketThreadTest3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.soft1841.Ticket.TicketThreadTest3" />
-      <module name="thread" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.soft1841.Ticket.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Application.TicketThreadTest3" />
       <item itemvalue="Application.FlyPigJFrame" />
       <item itemvalue="Application.NumFrame" />
       <item itemvalue="Application.DrawImageTest" />
       <item itemvalue="Application.NumberFrame" />
+      <item itemvalue="Application.Light" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Light" />
         <item itemvalue="Application.NumberFrame" />
         <item itemvalue="Application.DrawImageTest" />
         <item itemvalue="Application.FlyPigJFrame" />
         <item itemvalue="Application.NumFrame" />
-        <item itemvalue="Application.TicketThreadTest3" />
       </list>
     </recent_temporary>
   </component>
@@ -426,7 +396,9 @@
       <workItem from="1554852481498" duration="736000" />
       <workItem from="1554854661895" duration="2725000" />
       <workItem from="1554911973677" duration="1865000" />
-      <workItem from="1554997922762" duration="1891000" />
+      <workItem from="1554997922762" duration="2225000" />
+      <workItem from="1555073063617" duration="2521000" />
+      <workItem from="1555281556856" duration="1785000" />
     </task>
     <task id="LOCAL-00001" summary="Integer类的练习，进制转换底层">
       <created>1552355081254</created>
@@ -582,17 +554,24 @@
       <option name="project" value="LOCAL" />
       <updated>1554913799357</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="开启一个线程显示自然数递增，用暂停和回复按钮操作本线程">
+      <created>1555000061098</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1555000061098</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="193089000" />
+    <option name="totallyTimeSpent" value="197729000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2069523" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.18350849" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -601,7 +580,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32871974" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.0" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32871974" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39965397" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -649,23 +628,14 @@
     <MESSAGE value="启动线程，读取网络图片" />
     <MESSAGE value="绘图线程" />
     <MESSAGE value="在JLabel中绘制图像" />
-    <option name="LAST_COMMIT_MESSAGE" value="在JLabel中绘制图像" />
+    <MESSAGE value="开启一个线程显示自然数递增，用暂停和回复按钮操作本线程" />
+    <option name="LAST_COMMIT_MESSAGE" value="开启一个线程显示自然数递增，用暂停和回复按钮操作本线程" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/swing/swing.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swing/src/com/soft1841/JFileChooserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="678">
-          <caret line="38" column="44" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/io/src/com/soft1841/FileCopy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="402">
@@ -779,13 +749,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Documents/WeChat Files/wxid_ef1ozt61pplm22/FileStorage/File/2019-04/Demo4.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="678">
-          <caret line="27" column="28" lean-forward="true" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Documents/WeChat Files/wxid_ef1ozt61pplm22/FileStorage/File/2019-04/Demo4.java" />
     <entry file="file://$PROJECT_DIR$/swing/src/com/soft1841/ImgViewFrame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -856,13 +820,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Documents/WeChat Files/wxid_ef1ozt61pplm22/FileStorage/File/2019-04/ImgThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="52" column="5" lean-forward="true" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Documents/WeChat Files/wxid_ef1ozt61pplm22/FileStorage/File/2019-04/ImgThread.java" />
     <entry file="file://$PROJECT_DIR$/swing/src/com/soft1841/GridLayoutTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -870,13 +828,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Documents/WeChat Files/wxid_ef1ozt61pplm22/FileStorage/File/2019-04/ImgFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Documents/WeChat Files/wxid_ef1ozt61pplm22/FileStorage/File/2019-04/ImgFrame.java" />
     <entry file="file://$PROJECT_DIR$/thread/src/com/soft1841/drawLine/DrawLineThread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -898,13 +850,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Documents/WeChat Files/wxid_ef1ozt61pplm22/FileStorage/File/2019-04/JoinTset.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Documents/WeChat Files/wxid_ef1ozt61pplm22/FileStorage/File/2019-04/JoinTset.java" />
     <entry file="file://$PROJECT_DIR$/thread/src/com/soft1841/exam/NumFrame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
@@ -939,9 +885,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1140">
           <caret line="42" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -959,29 +902,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/draw/src/com/soft1841/DrawImageTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thread/src/com/soft1841/Number/NumberThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="56" column="22" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
-          <folding>
-            <element signature="e#248#249#0" expanded="true" />
-            <element signature="e#287#288#0" expanded="true" />
-            <element signature="e#426#427#0" expanded="true" />
-            <element signature="e#453#454#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/swing/src/com/soft1841/Exam.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -996,14 +916,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/draw/src/com/soft1841/DrawImageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-210">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thread/src/com/soft1841/Number/NumberThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-432">
+          <caret line="33" column="39" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/thread/src/com/soft1841/Number/NumberFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="49" column="40" selection-start-line="49" selection-start-column="40" selection-end-line="49" selection-end-column="40" />
+        <state relative-caret-position="30">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1226#1227#0" expanded="true" />
-            <element signature="e#1258#1259#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/WeChat Files/wxid_ef1ozt61pplm22/FileStorage/File/2019-04/TraficLights.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thread/src/com/soft1841/Light.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1462#1463#0" expanded="true" />
+            <element signature="e#1502#1503#0" expanded="true" />
           </folding>
         </state>
       </provider>
