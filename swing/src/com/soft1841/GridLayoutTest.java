@@ -104,7 +104,7 @@ public class GridLayoutTest extends JFrame {
             bytes = new byte[(int) srcFile.length()];
             inputStream.read(bytes);
         } catch (IOException e) {
-            System.out.println("io异常");
+            System.out.println("Io异常");
         }
         icon = new ImageIcon(bytes);
         imgLabel.setIcon(icon);
