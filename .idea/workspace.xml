@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1609e9cb-487c-458a-aa14-2367e8375b3b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/thread/jar/jsoup-1.11.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thread/src/com/soft1841/jSoup/JSoupDemo1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thread/src/com/soft1841/jSoup/JSoupDemo2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thread/thread.iml" beforeDir="false" afterPath="$PROJECT_DIR$/thread/thread.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,10 +15,10 @@
     <session id="2007900182">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="60" />
+          <entry key="project.closed" value="61" />
           <entry key="project.open.time.1" value="11" />
           <entry key="project.open.time.12" value="3" />
-          <entry key="project.open.time.13" value="4" />
+          <entry key="project.open.time.13" value="5" />
           <entry key="project.open.time.14" value="4" />
           <entry key="project.open.time.15" value="10" />
           <entry key="project.open.time.16" value="4" />
@@ -38,7 +36,7 @@
           <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="61" />
+          <entry key="project.opened" value="62" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -51,7 +49,7 @@
           <entry key="CLASS" value="4" />
           <entry key="IDEA_MODULE" value="3" />
           <entry key="Image" value="20" />
-          <entry key="JAVA" value="342" />
+          <entry key="JAVA" value="343" />
           <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
@@ -64,7 +62,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="27837" />
+          <entry key="JAVA" value="28441" />
           <entry key="PLAIN_TEXT" value="160" />
         </counts>
       </usages-collector>
@@ -75,17 +73,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/thread/src/com/soft1841/JoinDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="761">
+            <state relative-caret-position="900">
               <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/thread/src/com/soft1841/jSoup/JSoupDemo1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="-270">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/thread/src/com/soft1841/jSoup/JSoupDemo2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="32" column="69" selection-start-line="32" selection-start-column="69" selection-end-line="32" selection-end-column="69" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -108,7 +118,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/multithreading/src/com/soft1841/exam/NumFrame.java" />
         <option value="$PROJECT_DIR$/multithreading/src/com/soft1841/exam/TimeThread.java" />
         <option value="$PROJECT_DIR$/multithreading/src/com/soft1841/GetImageByNet.java" />
         <option value="$PROJECT_DIR$/thread/src/com/soft1841/TicketThreadTest1.java" />
@@ -159,6 +168,7 @@
         <option value="$PROJECT_DIR$/thread/src/com/soft1841/countTime/CountTimeFrame.java" />
         <option value="$PROJECT_DIR$/thread/src/com/soft1841/basic/Demo3.java" />
         <option value="$PROJECT_DIR$/thread/src/com/soft1841/jSoup/JSoupDemo1.java" />
+        <option value="$PROJECT_DIR$/thread/src/com/soft1841/jSoup/JSoupDemo2.java" />
       </list>
     </option>
   </component>
@@ -178,8 +188,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="607" />
-    <option name="y" value="10" />
+    <option name="x" value="606" />
+    <option name="y" value="9" />
     <option name="width" value="1248" />
     <option name="height" value="1092" />
   </component>
@@ -211,6 +221,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="soft1841" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="java-advanced" type="b2602c69:ProjectViewProjectNode" />
+              <item name="thread" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="soft1841" type="462c0819:PsiDirectoryNode" />
+              <item name="jSoup" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -220,7 +237,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555540531092" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555627167684" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/thread/jar/jsoup-1.11.3.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -259,7 +276,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.JSoupDemo1">
+  <component name="RunManager" selected="Application.JSoupDemo2">
     <configuration name="CountTimeFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.soft1841.countTime.CountTimeFrame" />
       <module name="thread" />
@@ -273,12 +290,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DrawImageTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.soft1841.DrawImageTest" />
-      <module name="draw" />
+    <configuration name="JSoupDemo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.soft1841.jSoup.JSoupDemo1" />
+      <module name="thread" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.soft1841.*" />
+          <option name="PATTERN" value="com.soft1841.jSoup.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -286,8 +303,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JSoupDemo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.soft1841.jSoup.JSoupDemo1" />
+    <configuration name="JSoupDemo2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.soft1841.jSoup.JSoupDemo2" />
       <module name="thread" />
       <extension name="coverage">
         <pattern>
@@ -327,18 +344,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.CountTimeFrame" />
-      <item itemvalue="Application.DrawImageTest" />
       <item itemvalue="Application.TimeFrame" />
       <item itemvalue="Application.NumberFrame" />
       <item itemvalue="Application.JSoupDemo1" />
+      <item itemvalue="Application.JSoupDemo2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JSoupDemo2" />
         <item itemvalue="Application.JSoupDemo1" />
         <item itemvalue="Application.CountTimeFrame" />
         <item itemvalue="Application.NumberFrame" />
         <item itemvalue="Application.TimeFrame" />
-        <item itemvalue="Application.DrawImageTest" />
       </list>
     </recent_temporary>
   </component>
@@ -412,7 +429,8 @@
       <workItem from="1555476427358" duration="8568000" />
       <workItem from="1555498444113" duration="2246000" />
       <workItem from="1555518941328" duration="483000" />
-      <workItem from="1555537030166" duration="3491000" />
+      <workItem from="1555537030166" duration="3674000" />
+      <workItem from="1555624025164" duration="3061000" />
     </task>
     <task id="LOCAL-00001" summary="Integer类的练习，进制转换底层">
       <created>1552355081254</created>
@@ -610,17 +628,24 @@
       <option name="project" value="LOCAL" />
       <updated>1555485096707</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="JSoup爬虫练习1">
+      <created>1555540559967</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1555540559967</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="248142000" />
+    <option name="totallyTimeSpent" value="251386000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.21988682" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19159256" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -629,7 +654,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32871974" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.91868514" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2681661" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39965397" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -657,7 +682,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="数学函数和去随机数" />
     <MESSAGE value="List练习" />
     <MESSAGE value="综合练习" />
     <MESSAGE value="list和set接口学习" />
@@ -682,20 +706,14 @@
     <MESSAGE value="闹钟" />
     <MESSAGE value="用join()方法的倒计时程序" />
     <MESSAGE value="倒计时器" />
-    <option name="LAST_COMMIT_MESSAGE" value="倒计时器" />
+    <MESSAGE value="JSoup爬虫练习1" />
+    <option name="LAST_COMMIT_MESSAGE" value="JSoup爬虫练习1" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/thread/src/com/soft1841/exam1/CircleThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/thread/src/com/soft1841/exam1/WordThread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -916,15 +934,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/thread/src/com/soft1841/JoinDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="761">
+        <state relative-caret-position="900">
           <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/thread/src/com/soft1841/jSoup/JSoupDemo1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="-270">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thread/src/com/soft1841/jSoup/JSoupDemo2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="32" column="69" selection-start-line="32" selection-start-column="69" selection-end-line="32" selection-end-column="69" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
