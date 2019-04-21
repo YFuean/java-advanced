@@ -60,13 +60,13 @@ public class CardLayoutTest extends JFrame implements ActionListener {
 
     //构造getPanel()方法，返回一个随机背景色的JPanel对象
     private JPanel getPanel() {
-        JPanel newPanel = new JPanel();
+        JPanel colorPanel = new JPanel();
         Random random = new Random();
-        int r = random.nextInt(256);
-        int g = random.nextInt(256);
-        int b = random.nextInt(256);
-        newPanel.setBackground(new Color(r,g,b));
-        return newPanel;
+        int r = random.nextInt(255);
+        int g = random.nextInt(255);
+        int b = random.nextInt(255);
+        colorPanel.setBackground(new Color(r,g,b));
+        return colorPanel;
     }
 
     public static void main(String[] args) {

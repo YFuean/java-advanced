@@ -15,7 +15,7 @@ import java.net.URLConnection;
 import java.util.UUID;
 
 /**
- * 爬取http://expo.bootcss.com/页面图片到D盘QLDownload目录，图片名UUID，后缀名
+ * 爬取 http://www.bootcss.com/ 页面图片到D盘QLDownload目录，图片名UUID，后缀名
  * 2019.4.19
  */
 public class JSoupDemo2 {
@@ -23,16 +23,17 @@ public class JSoupDemo2 {
         File file;
         InputStream inputStream;
         OutputStream outputStream;
-        String url = "http://expo.bootcss.com/";
+        String url = "http://www.jjwxc.net/fenzhan/ys/";
+        //http://www.jjwxc.net/fenzhan/ys/
         Connection connection = Jsoup.connect(url);
         Document document = connection.get();
-        Element elementDiv = document.getElementById("post-list");
-        Elements elements = elementDiv.getElementsByClass("col-xs-12");
+        //Elements elementDiv = document.getElementsByClass("jtfm2");
+        Elements elements = document.getElementsByClass("ycyqt");
         System.out.println(elements.size());
         for (Element e:elements) {
-            Element imgElement = e.child(0).child(1).child(0).child(0);
+            Element imgElement = e.child(0).child(0);
             UUID uuid = UUID.randomUUID();
-            String imgName = uuid + ".png";
+            String imgName = uuid + ".jpg";
             file = new File("D:/QLDownload/" + imgName);
             URL url1 = new URL(imgElement.attr("src"));
             URLConnection uc = url1.openConnection();
