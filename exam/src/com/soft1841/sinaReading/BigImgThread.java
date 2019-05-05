@@ -1,13 +1,9 @@
 package com.soft1841.sinaReading;
 
 import javax.swing.*;
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
-
+/**
+ * 大图轮播
+ */
 public class BigImgThread extends Thread {
     private String[] imgPath = {"DImg2.png","DImg2.png","DImg1.png","DImg3.png"};
     private JLabel bigImageLabel;

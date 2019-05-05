@@ -47,8 +47,5 @@ public class JSoupDemo2 {
             outputStream.close();
             inputStream.close();
         }
-
-
-
     }
 }

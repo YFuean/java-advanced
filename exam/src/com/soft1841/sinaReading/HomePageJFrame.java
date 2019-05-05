@@ -1,38 +1,94 @@
 package com.soft1841.sinaReading;
 
+import org.jsoup.Connection;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+
+import javax.imageio.ImageIO;
 import javax.swing.*;
+import javax.swing.border.EmptyBorder;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.*;
+import java.net.URL;
+import java.net.URLConnection;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.*;
+import java.util.List;
 
 /**
  * 大作业，模仿新浪读书，综合运用线程，IO，爬虫，集合，窗体等
  * @author yuefan
+ * 2019.4.27
  */
 public class HomePageJFrame extends JFrame implements ActionListener{
-    private JPanel topPanel,topPanel1,topPanel2,smallTopPanel;
-    private JPanel centerPanel,firstPanel,hotPanel,boyPanel,newBookPanel,freePanel;
-    private JLabel logoImgLabel,loginImgLabel,phoneImgLabel;
+    private JPanel topPanel,topPanel1,topPanel2,smallTopPanel;//顶部版面
+    private JPanel centerPanel,firstPanel,hotPanel,boyPanel,girlPanel,newBookPanel,freePanel;//中部切换版面
+    private JLabel logoImgLabel,loginImgLabel,phoneImgLabel;//顶部标签
     private JTextField searchField;
     private JButton searchButton;
-    private JButton homeButton,hotButton,boyButton,girlButton,newBookButton,freeBookButton;
-    private CardLayout bookCardLayout,cardLayout;
-    private JPanel bottomPanel,smallBottomPanel,bookPanel;
-    private JLabel fgImgLabel,freeLabel,bookLabel1,bookLabel2,bookLabel3,timeLabel;
-    private JButton previousButton,nextButton;
-    private JLabel bigImageLabel,smallFgImgLabel;
-    private JPanel gridPanel,boxPanel1,boxPanel2;
-    private JPanel newBookPanels;
-    private JLabel coverLabels,nameLabels,writerLabels;
-    private JTextArea jsTextAreas;
-    private JTable boyTable,girlTabel;
+    private JButton homeButton,hotButton,boyButton,girlButton,newBookButton,freeBookButton;//导航按钮
+    private CardLayout bookCardLayout,cardLayout;//两个卡片布局
+    private JPanel bottomPanel,smallBottomPanel,bookPanel;//底部版面
+    private JLabel fgImgLabel,freeLabel,bookLabel1,bookLabel2,bookLabel3,timeLabel;//底部一系列标签
+    private JButton previousButton,nextButton;//底部切换按钮
+    private JLabel bigImageLabel,smallFgImgLabel;//中部，首页轮播图和分割线图
+    private JPanel gridPanel,boxPanel1,boxPanel2;//中部，按钮网格和两个文字的盒子布局
+    private JPanel newBookPanels,freeBookPanels;//网格中8个新书版面，网格中8个免费书版面
+    private JLabel coverLabels,nameLabels,writerLabels,freeBookNameLabels;//网格中，每个新书面板的标签，每个免费书面板的标签
+    private JTextArea jsTextAreas,freeJsTextAreas;//网格中，每个新书面板的文本域，每个免费书面板的文本域
+    private JButton downloadButtons;
+    private JTable boyTable,girlTable;//火热面板中，男生女生榜
+    private List<Book> boyBookList = new ArrayList<>();
+    private List<Book> girlBookList = new ArrayList<>();
+    private static final long serialVersionUID = 1L;//进度条
+    private ProgressBarThread progressBarThread;//进度条线程
+
+    public static void main(String[] args) {
+        //爬图片，代码不够优化。本想能开启一个线程进行爬虫，传值imageName，但是没有成功
+        File file;
+        InputStream inputStream;
+        OutputStream outputStream;
+        String url = "http://book.sina.com.cn/";
+        Connection connection = Jsoup.connect(url);
+        Document document;
+        try {
+            document = connection.get();
+            Elements elements = document.getElementsByClass("list-img");
+            for (Element element:elements) {
+                Element imgElement = element.child(0).child(0);
+                //给图片有序命名
+                String imageNames = "n"+elements.indexOf(element)+".jpg";
+                file = new File("D:/JavaStudy/java-advanced/exam/src/img/" + imageNames);
+                URL url1 = new URL(imgElement.attr("src"));
+                URLConnection uc = url1.openConnection();
+                inputStream = uc.getInputStream();
+                outputStream = new FileOutputStream(file);
+                int temp;
+                byte[] buf = new byte[1024];
+                while ((temp = inputStream.read(buf))!=-1){
+                    outputStream.write(buf,0,temp);
+                }
+                outputStream.close();
+                inputStream.close();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        //倒计时
+        new HomePageJFrame().getTime("2019-04-28 00:00:00");
+    }
     public HomePageJFrame(){
         init();
-        setTitle("新浪读书");
+        this.setTitle("新浪读书");
         //界面启动最大化
-        setExtendedState(JFrame.MAXIMIZED_BOTH);
-        setVisible(true);
-        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        this.setExtendedState(JFrame.MAXIMIZED_BOTH);
+        this.setVisible(true);
+        this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }
     private void init(){
         Font font1 = new Font("微软雅黑",Font.PLAIN,20);
@@ -40,7 +96,6 @@ public class HomePageJFrame extends JFrame implements ActionListener{
         Font font3 = new Font("微软雅黑",Font.BOLD,18);
         Font font4 = new Font("微软雅黑",Font.BOLD,24);
         Font font5 = new Font("微软雅黑",Font.BOLD,36);
-
         setLayout(new BorderLayout(0,0));
         //顶部面板topPanel中包括topPanel1和topPanel2
         topPanel = new JPanel();
@@ -185,8 +240,7 @@ public class HomePageJFrame extends JFrame implements ActionListener{
         gridPanel.setBackground(Color.WHITE);
         firstPanel.add(gridPanel);
         gridPanel = new JPanel();
-        //垂直盒子文字
-        boxPanel1 = new JPanel();
+        boxPanel1 = new JPanel();//垂直盒子文字
         BoxLayout word1BoxLayout = new BoxLayout(boxPanel1,BoxLayout.Y_AXIS);
         boxPanel1.setLayout(word1BoxLayout);
         for (int i = 0;i<7;i++){
@@ -224,14 +278,22 @@ public class HomePageJFrame extends JFrame implements ActionListener{
         smallFgImgLabel.setBounds(1380,250,500,10);
 
         //最火面板,排序
-        hotPanel = new JPanel();
-        hotPanel.setBackground(Color.WHITE);
+        hotPanel = new JPanel(){//给hotPanel绘制背景图
+            protected void paintComponent(Graphics g){
+                try{
+                    Image bg = ImageIO.read(new File("D:/JavaStudy/java-advanced/exam/src/img/ancient1.jpg"));
+                    g.drawImage(bg,0,0,getWidth(),getHeight(),null);
+                }catch (IOException e){
+                    e.printStackTrace();
+                }
+            }
+        };
         centerPanel.add("2",hotPanel);
         hotPanel.setLayout(null);
         JButton boyListButton = new JButton("男生畅销榜");
         JButton girlListButton = new JButton("女生畅销榜");
-        boyListButton.setBounds(200,20,550,50);
-        girlListButton.setBounds(1100,20,550,50);
+        boyListButton.setBounds(100,20,550,50);
+        girlListButton.setBounds(1300,20,550,50);
         boyListButton.setFont(font5);
         boyListButton.setForeground(Color.WHITE);
         boyListButton.setBackground(new Color(130, 15, 40));
@@ -242,68 +304,145 @@ public class HomePageJFrame extends JFrame implements ActionListener{
         girlListButton.setBorder(BorderFactory.createLineBorder(new Color(130, 15, 40),0));
         hotPanel.add(boyListButton);
         hotPanel.add(girlListButton);
-        //男生榜表格
-        // 表头（列名）
-        Object[] columnNames = {"排名", "书名","人气值"};
-        // 表格所有行数据
-        Object[][] rowData = {
-                {1,"女总裁的特种神医",1066.1+"万人气"},
-                {2,"丹武圣尊",1066.1+"万人气"},
-                {3,"宋时行",1066.1+"万人气"},
-                {4,"九界独尊",1066.1+"万人气"},
-                {5,"生生不灭",1066.1+"万人气"},
-                {6,"无上斗魂",1066.1+"万人气"},
-                {7,"剑墟",1066.1+"万人气"},
-                {8,"完美至尊",1066.1+"万人气"},
-                {9,"辣手狂医",1066.1+"万人气"},
-                {10,"绝世战魂",1066.1+"万人气"}
-        };
-        // 创建一个表格，指定 所有行数据 和 表头
-        boyTable = new JTable(rowData, columnNames);
+        //男生榜表格，男生表格传值
+        BoyTableModel boyTableModel = new BoyTableModel();
+        boyTableModel.setboyBookList(boyBookList);
+        boyTable = new JTable(boyTableModel);
+        boyTable.setBounds(100,70,550,550);
         boyTable.setOpaque(false);
         boyTable.setFont(font1);
         boyTable.setRowHeight(45);
-        boyTable.setBounds(200,70,550,550);
         hotPanel.add(boyTable);
+        //女生榜表格
+        GirlTableModel girlTableModel = new GirlTableModel ();
+        girlTableModel.setgirlBookList(girlBookList);
+        girlTable = new JTable(girlTableModel);
+        girlTable.setBounds(1300,70,550,550);
+        girlTable.setOpaque(false);
+        girlTable.setFont(font1);
+        girlTable.setRowHeight(45);
+        hotPanel.add(girlTable);
 
-        //新书面板，爬虫
+        //新书面板，图片爬虫
         newBookPanel = new JPanel();
         newBookPanel.setBackground(Color.WHITE);
         centerPanel.add("5",newBookPanel);
-        newBookPanel.setLayout(null);
-        JPanel gbPanel = new JPanel();
-        gbPanel.setLayout(new GridLayout(2,4,50,20));
-        gbPanel.setBounds(25,15,1865,520);
-        gbPanel.setBackground(Color.WHITE);
-        newBookPanel.add(gbPanel);
+        newBookPanel.setLayout(new GridLayout(2,4,50,20));
+        newBookPanel.setBorder(new EmptyBorder(15,25,15,25));//设置newBookPanel的内边距
         for (int i =0;i<8;i++){
             newBookPanels = new JPanel();//每本新书的面板
             newBookPanels.setBackground(Color.WHITE);
-            gbPanel.add(newBookPanels);
+            newBookPanel.add(newBookPanels);
             newBookPanels.setLayout(null);
-            coverLabels = new JLabel();//加封面
-            Icon coverIcon = new ImageIcon(HomePageJFrame.class.getResource("/img/sample.jpg"));
+            String[] imageName = {"n0.jpg","n1.jpg","n2.jpg","n3.jpg",
+                    "n4.jpg","n5.jpg","n6.jpg","n7.jpg"};//加封面
+            coverLabels = new JLabel();
+            Icon coverIcon = new ImageIcon(HomePageJFrame.class.getResource("/img/" + imageName[i]));
             coverLabels.setIcon(coverIcon);
             coverLabels.setBounds(0,0,185,250);
             newBookPanels.add(coverLabels);
-            nameLabels = new JLabel("剑起风云");//加书名
+            String[] nameStrings = {"都市最强学生","算阴命","我本废柴","逍遥战兵闯花都",
+                    "农门妆娘","毒凰天下","盛世娇宠","诱妃入怀"};//加书名
+            nameLabels = new JLabel(nameStrings[i]);
             nameLabels.setFont(font4);
-            nameLabels.setBounds(200,10,100,25);
+            nameLabels.setBounds(200,10,220,25);
             newBookPanels.add(nameLabels);
-            writerLabels = new JLabel("沐潇三生");//加作者名
+            String[] writerStrings = {"请叫我风哥","九品一局","执剑长老","小司马",
+                    "绪凝","暗夜妖妃","凉夜白","陌和和"};
+            writerLabels = new JLabel(writerStrings[i]);//加作者名
             writerLabels.setFont(font1);
-            writerLabels.setBounds(200,50,100,20);
+            writerLabels.setBounds(200,50,220,20);
             newBookPanels.add(writerLabels);
+            String[] contentStrings = {"因为胳膊上的胎记，我从小被人嘲笑是个",
+                    "我妈在生我的时候被野兽叼走，十二年",
+                    "修仙高手渡劫失败，灵魂降临地球，成为",
+                    "【佣兵归来隐都市，花中逍遥铸传奇】绰",
+                    "某女是个21世纪优秀的化妆师，穿越后，",
+                    "她是名镇天下的“夺命罗刹”，嚣张跋",
+                    "她拒绝皇上的册封，从此走红后宫！",
+                    "她飞上枝头，可王妃不好当，明枪暗箭防"};
             jsTextAreas = new JTextArea(4,20);//加新书介绍
             jsTextAreas.setFont(font1);
             jsTextAreas.setForeground(new Color(154, 154, 154));
             jsTextAreas.setLineWrap(true);        //激活自动换行功能
             jsTextAreas.setWrapStyleWord(true);            // 激活断行不断字功能
             jsTextAreas.setEditable(false);                  //设置文本框不可编辑
-            jsTextAreas.setText("浮尘乱世，乱的不是天下，而是人心。隶属于天风国的顾家，满门忠烈，皆是英豪…");
+            jsTextAreas.setText(contentStrings[i]);
             jsTextAreas.setBounds(200,90,220,150);
             newBookPanels.add(jsTextAreas);
         }
+
+        //免费面板
+        freePanel = new JPanel();
+        freePanel.setBackground(Color.WHITE);
+        centerPanel.add("6",freePanel);
+        freePanel.setBorder(new EmptyBorder(15,25,15,25));//设置freePanel的内边距
+        freePanel.setLayout(new GridLayout(2,4,50,20));
+        for (int i =0;i<8;i++){
+            freeBookPanels= new JPanel();
+            freeBookPanels.setBackground(Color.WHITE);
+            freeBookPanels.setLayout(null);
+            freePanel.add(freeBookPanels);
+
+            String[] strings = {"坑爹儿子医鬼娘亲", "神医夫君下酒菜", "名门挚爱：帝少的千亿宠儿", "大清隐龙",
+                    "桃运神戒","女神总裁是我老婆","横扫三国的东方铁骑","巴黎圣母院"};//书名数组
+            freeBookNameLabels = new JLabel(strings[i]);
+            freeBookNameLabels.setFont(font5);
+            freeBookNameLabels.setBounds(0,5,430,40);
+            freeBookPanels.add(freeBookNameLabels);
+            String[] strings1 = {"听说玉家大小姐玉清落刚嫁入于家，新婚之夜丈夫丢下她带着心爱的女人离家出走了。 听...",
+                    "艾巧巧从小在父亲身边耳目渲染，习得一手好厨艺，却不想家中遭巨变。 父亲重伤身亡，...",
+                    "她一脸惊慌：你敢乱来，我……我告你。 他捏住她的下巴，笑得邪魅：整个东陵都是我的天...",
+                    "西历1864年，清同治三年，肖乐天来了，带着改变中华国运的理想来到了这个沉重的时代。...",
+                    "神戒在手，吃喝不愁 宋砚自从得到一枚戒指后，生活就发生了翻天覆地的变化 为此，宋...",
+                    "兵王厌倦刀光剑影的生活，决定隐归都市，却意外与美女总裁领证结婚，从此过上了你不鸟...",
+                    "唐亮意外穿越三国，附身在一个年轻小将身上，他收猛将，招谋士，训练死士，特种兵，屯...",
+                    "小说《巴黎圣母院》艺术地再现了四百多年前法王路易十一统治时期的历史真实，宫廷与教会如何狼狈为奸压迫人民群众，人民群众怎样同两股势力英勇斗争。"};
+            freeJsTextAreas = new JTextArea(4,20);//免费书书介绍
+            freeJsTextAreas.setFont(font1);
+            freeJsTextAreas.setForeground(new Color(154, 154, 154));
+            freeJsTextAreas.setLineWrap(true);        //激活自动换行功能
+            freeJsTextAreas.setWrapStyleWord(true);            // 激活断行不断字功能
+            freeJsTextAreas.setEditable(false);                  //设置文本框不可编辑
+            freeJsTextAreas.setText(strings1[i]);
+            freeJsTextAreas.setBounds(0,60,430,120);
+            freeBookPanels.add(freeJsTextAreas);
+            downloadButtons = new JButton("下载");//按钮
+            downloadButtons.setFont(font1);
+            downloadButtons.setBackground(Color.WHITE);
+            downloadButtons.setForeground(new Color(154, 154, 154));
+            downloadButtons.setBorder(BorderFactory.createLineBorder(new Color(154, 154, 154),2,true));
+            downloadButtons.addActionListener(this);
+            downloadButtons.setBounds(0,200,60,25);
+            freeBookPanels.add(downloadButtons);
+        }
+        //男生面板
+        boyPanel = new JPanel(){
+            protected void paintComponent(Graphics g){
+                try{
+                    Image bg = ImageIO.read(new File("D:/JavaStudy/java-advanced/exam/src/img/ScienceB13.jpg"));
+                    g.drawImage(bg,0,0,getWidth(),getHeight(),null);
+                }catch (IOException e){
+                    e.printStackTrace();
+                }
+            }
+        };
+        boyPanel.setBackground(Color.WHITE);
+        centerPanel.add("3",boyPanel);
+        boyPanel.setLayout(null);
+        //女生面板
+        girlPanel = new JPanel(){
+            protected void paintComponent(Graphics g){
+                try{
+                    Image bg = ImageIO.read(new File("D:/JavaStudy/java-advanced/exam/src/img/ScienceB12.jpg"));
+                    g.drawImage(bg,0,0,getWidth(),getHeight(),null);
+                }catch (IOException e){
+                    e.printStackTrace();
+                }
+            }
+        };
+        girlPanel.setBackground(Color.WHITE);
+        centerPanel.add("4",girlPanel);
 
         //bottomPanel底部面板,空布局，加入smallBottomPanel和两个图片标签，两个按钮
         bottomPanel = new JPanel();
@@ -432,31 +571,67 @@ public class HomePageJFrame extends JFrame implements ActionListener{
         textArea3.setBounds(0,90,800,170);
         introducePanel3.add(textArea3);
         //倒计时线程
-        freeLabel = new JLabel("[今日限免]距离截至时间还有：");
+        freeLabel = new JLabel("[今日限免]距离截止时间还有：");
         freeLabel.setFont(font4);
         freeLabel.setBounds(1408,100,480,40);
         bottomPanel.add(freeLabel);
         timeLabel = new JLabel();
-        TimeThread timeThread = new TimeThread();
-//        timeThread.setTimeLabel(timeLabel);
-//        timeThread.getTime("2019-04-21 16:38:00");
-        timeThread.start();
         timeLabel.setFont(font4);
         timeLabel.setBounds(1408,140,480,40);
         bottomPanel.add(timeLabel);
     }
+    /* String -> Date */
+    private Date String2Date(String dateStr) {
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        try {
+            Date date = simpleDateFormat.parse(dateStr);
+            return date;
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+    /* 倒计时的主要代码块 */
+    private void getTime(String dateStr) {
+        Date end = String2Date(dateStr);
+        long time = (end.getTime() - 1 - new Date().getTime()) / 1000; // 自定义倒计时时间
+        long hour = 0;
+        long minute = 0;
+        long seconds = 0;
+        while (time >= 0) {
+            hour = time / 3600;
+            minute = (time - hour * 3600) / 60;
+            seconds = time - hour * 3600 - minute * 60;
+            StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.append(hour).append("时 ").append(minute).append("分 ").
+                    append(seconds).append("秒");
+            timeLabel.setText(stringBuilder.toString());
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            time--;
+        }
+    }
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        // 判断用户点击了哪个JLabel
+        // 中部切换面板
         if (e.getSource() == homeButton) {
             cardLayout.show(centerPanel, "1");
-        } else if (e.getSource() == hotButton) {
+        }if (e.getSource() == hotButton) {
             cardLayout.show(centerPanel, "2");
-        } else if (e.getSource() == newBookButton) {
+        }if (e.getSource() == newBookButton) {
             cardLayout.show(centerPanel, "5");
+        }if (e.getSource() == boyButton){
+            cardLayout.show(centerPanel,"3");
+        }if (e.getSource() == girlButton){
+            cardLayout.show(centerPanel,"4");
+        }if (e.getSource() == freeBookButton){
+            cardLayout.show(centerPanel,"6");
         }
-
+        //底部切换图书
         if (e.getSource() == previousButton){
             //调用previous显示上一张
             bookCardLayout.previous(bookPanel);
@@ -466,8 +641,48 @@ public class HomePageJFrame extends JFrame implements ActionListener{
             bookCardLayout.next(bookPanel);
             bookCardLayout.next(smallBottomPanel);
         }
-    }
-    public static void main(String[] args) {
-        new HomePageJFrame();
+        //下载按钮
+        if (e.getSource() == downloadButtons){
+            //进度条对话框
+            final JFrame jFrame = new JFrame("文件下载");
+            jFrame.setVisible(true);
+            jFrame.setSize(400, 200);
+            jFrame.setLocationRelativeTo(null);
+            jFrame.setVisible(true);
+            jFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+            jFrame.setAlwaysOnTop(!jFrame.isAlwaysOnTop());//将窗体处于最上
+            JPanel progressBarPanel = new JPanel();//放置进度条和按钮的面板
+            jFrame.add(progressBarPanel);
+            progressBarPanel.setLayout(null);
+            JButton closeButton = new JButton("确定");//关闭按钮
+            closeButton.addActionListener(this);
+            progressBarPanel.add(closeButton);
+            closeButton.setBounds(160,90,80,30);
+            if (e.getSource() == closeButton){
+                jFrame.dispose();
+            }
+            //进度条
+            final JProgressBar progressBar = new JProgressBar();
+            progressBarPanel.add(progressBar);
+            progressBar.setBounds(100,50,200,30);
+            progressBar.setStringPainted(true);//设置进度条显示数学字符
+            progressBarThread = new ProgressBarThread();
+            progressBarThread.setProgressBar(progressBar);
+            progressBarThread.start();
+            //复制文件
+            File srcFile = new File("D:/novel/巴黎圣母院.txt");
+            File destFile = new File("D:/ReadingAndDownloading/巴黎圣母院.txt");
+            try {
+                Reader in = new FileReader(srcFile);
+                char[] chars = new char[(int) srcFile.length()];
+                in.read(chars);
+                Writer out = new FileWriter(destFile);
+                out.write(chars);
+                in.close();
+                out.close();
+            } catch (IOException e1) {
+                e1.printStackTrace();
+            }
+        }
     }
 }

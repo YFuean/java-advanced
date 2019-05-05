@@ -13,7 +13,7 @@ public class FlyPigJFrame extends JFrame {
 
     //进度条
     private static final long serialVersionUID = 1L;
-    private Thread threadA;
+    private ProgressBarThread progressBarThread;
 
     public FlyPigJFrame(){
         init();
@@ -40,27 +40,12 @@ public class FlyPigJFrame extends JFrame {
         ticLabel.setBounds(300,100,500,30);
         //进度条
         final JProgressBar progressBar = new JProgressBar();
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setVisible(true);
         topPanel .add(progressBar);
         progressBar.setBounds(300,150,500,30);
-        //设置进度条显示数学字符
-        progressBar.setStringPainted(true);
-        threadA = new Thread(new Runnable() {
-            int count = 100;
-            public void run() {
-                while (true){
-                    progressBar.setValue(--count);
-                    try {
-                        Thread.sleep(500);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                }
-
-            }
-        });
-        threadA.start();
+        progressBar.setStringPainted(true);//设置进度条显示数学字符
+        progressBarThread = new ProgressBarThread();
+        progressBarThread.setProgressBar(progressBar);
+        progressBarThread.start();
         //背景图
         bgLabel = new JLabel();
         Icon backIcon = new ImageIcon(FlyPigJFrame.class.getResource("/img/bg.png"));
