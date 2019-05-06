@@ -1,4 +1,4 @@
-package com.soft1841;
+package com.soft1841.basic;
 
 import java.io.IOException;
 import java.net.ServerSocket;
