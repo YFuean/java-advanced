@@ -11,7 +11,7 @@ import java.net.Socket;
  * 客户端向服务器端发送文本数据——控制台版
  * 服务器端
  */
-public class Server3 {
+public class Server1 {
     public static void main(String[] args) throws IOException {
         ServerSocket serverSocket = new ServerSocket(10086);
         System.out.println("服务器启动");
