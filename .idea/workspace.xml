@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1609e9cb-487c-458a-aa14-2367e8375b3b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/networking/src/com/soft1841/socket4/Client4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/networking/src/com/soft1841/socket4/Server4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/networking/src/com/soft1841/work1/Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/networking/src/com/soft1841/work1/workClient1/WorkClientApp1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/networking/src/com/soft1841/work1/workClient1/WorkClientController1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/networking/src/com/soft1841/work1/workClient1/workClient1.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/networking/src/com/soft1841/work1/workClient1/workClient1.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/networking/src/com/soft1841/work1/workServer1/WorkServerApp1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/networking/src/com/soft1841/work1/workServer1/WorkServerController1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/networking/src/com/soft1841/work1/workServer1/workServer1.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/networking/src/com/soft1841/work1/workServer1/workServer1.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/networking/src/com/soft1841/UDP/UDPClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/networking/src/com/soft1841/UDP/UDPServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/networking/src/com/soft1841/work1/workClient1/WorkClientController1.java" beforeDir="false" afterPath="$PROJECT_DIR$/networking/src/com/soft1841/work1/workClient1/WorkClientController1.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,15 +17,15 @@
     <session id="2007900182">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="87" />
-          <entry key="project.open.time.1" value="11" />
+          <entry key="project.closed" value="92" />
+          <entry key="project.open.time.1" value="12" />
           <entry key="project.open.time.12" value="4" />
           <entry key="project.open.time.13" value="5" />
           <entry key="project.open.time.14" value="7" />
           <entry key="project.open.time.15" value="11" />
           <entry key="project.open.time.16" value="9" />
           <entry key="project.open.time.17" value="8" />
-          <entry key="project.open.time.18" value="3" />
+          <entry key="project.open.time.18" value="4" />
           <entry key="project.open.time.19" value="2" />
           <entry key="project.open.time.2" value="8" />
           <entry key="project.open.time.20" value="1" />
@@ -43,12 +35,13 @@
           <entry key="project.open.time.24" value="5" />
           <entry key="project.open.time.25" value="2" />
           <entry key="project.open.time.26" value="1" />
-          <entry key="project.open.time.27" value="3" />
+          <entry key="project.open.time.27" value="4" />
+          <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="89" />
+          <entry key="project.opened" value="94" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -62,7 +55,7 @@
           <entry key="CSS" value="4" />
           <entry key="IDEA_MODULE" value="5" />
           <entry key="Image" value="64" />
-          <entry key="JAVA" value="538" />
+          <entry key="JAVA" value="543" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="XML" value="4" />
         </counts>
@@ -77,7 +70,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="95" />
-          <entry key="JAVA" value="46957" />
+          <entry key="JAVA" value="47875" />
           <entry key="PLAIN_TEXT" value="180" />
           <entry key="XML" value="265" />
         </counts>
@@ -87,10 +80,37 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/networking/src/com/soft1841/work1/workServer1/workServer1.css">
+        <entry file="file://$PROJECT_DIR$/networking/src/com/soft1841/work1/workClient1/WorkClientController1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+            <state relative-caret-position="176">
+              <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/networking/src/com/soft1841/UDP/UDPServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1140">
+              <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/networking/src/com/soft1841/UDP/UDPClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="348">
+              <caret line="37" column="16" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -105,90 +125,6 @@
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/networking/src/com/soft1841/work1/workServer1/workServer1.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-            </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/networking/src/com/soft1841/work1/workServer1/WorkServerApp1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/networking/src/com/soft1841/work1/workServer1/WorkServerController1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="45" column="13" lean-forward="true" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1161#1162#0" expanded="true" />
-                <element signature="e#1207#1208#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/networking/src/com/soft1841/socket4/Client4.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/networking/src/com/soft1841/socket4/Server4.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#615#616#0" expanded="true" />
-                <element signature="e#651#652#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/networking/src/com/soft1841/work1/workClient1/WorkClientController1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/networking/src/com/soft1841/work1/workClient1/workClient1.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
-            </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
     </leaf>
@@ -208,8 +144,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/exam/src/com/soft1841/sinaReading/BookList.java" />
-        <option value="$PROJECT_DIR$/collection/src/com/soft1841/exam/bigwork1/sample.java" />
         <option value="$PROJECT_DIR$/thread/src/com/soft1841/jSoup/JSoupDemo1.java" />
         <option value="$PROJECT_DIR$/exam/src/com/soft1841/test/TestJtable.java" />
         <option value="$PROJECT_DIR$/exam/src/com/soft1841/test/BookTableModel.java" />
@@ -254,11 +188,13 @@
         <option value="$PROJECT_DIR$/networking/src/com/soft1841/work1/workClient1/WorkClientApp1.java" />
         <option value="$PROJECT_DIR$/networking/src/com/soft1841/work1/workServer1/workServer1.css" />
         <option value="$PROJECT_DIR$/networking/src/com/soft1841/work1/workServer1/WorkServerApp1.java" />
-        <option value="$PROJECT_DIR$/networking/src/com/soft1841/work1/workClient1/WorkClientController1.java" />
         <option value="$PROJECT_DIR$/networking/src/com/soft1841/work1/workServer1/workServer1.fxml" />
         <option value="$PROJECT_DIR$/networking/src/com/soft1841/work1/workServer1/WorkServerController1.java" />
         <option value="$PROJECT_DIR$/networking/src/com/soft1841/socket4/Client4.java" />
         <option value="$PROJECT_DIR$/networking/src/com/soft1841/socket4/Server4.java" />
+        <option value="$PROJECT_DIR$/networking/src/com/soft1841/work1/workClient1/WorkClientController1.java" />
+        <option value="$PROJECT_DIR$/networking/src/com/soft1841/UDP/UDPServer.java" />
+        <option value="$PROJECT_DIR$/networking/src/com/soft1841/UDP/UDPClient.java" />
       </list>
     </option>
   </component>
@@ -284,7 +220,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="960" />
+    <option name="x" value="-11" />
+    <option name="y" value="-11" />
     <option name="width" value="1533" />
     <option name="height" value="1092" />
   </component>
@@ -296,6 +233,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -319,22 +257,7 @@
               <item name="networking" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="soft1841" type="462c0819:PsiDirectoryNode" />
-              <item name="imgSocket" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-advanced" type="b2602c69:ProjectViewProjectNode" />
-              <item name="networking" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="soft1841" type="462c0819:PsiDirectoryNode" />
-              <item name="imgSocket" type="462c0819:PsiDirectoryNode" />
-              <item name="Server3.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="java-advanced" type="b2602c69:ProjectViewProjectNode" />
-              <item name="networking" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="soft1841" type="462c0819:PsiDirectoryNode" />
-              <item name="socket4" type="462c0819:PsiDirectoryNode" />
+              <item name="UDP" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="java-advanced" type="b2602c69:ProjectViewProjectNode" />
@@ -347,14 +270,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557354265561" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557442219507" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/exam/jar/jsoup-1.11.3.jar!/" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -396,20 +318,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Client4">
-    <configuration name="Client3 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.soft1841.socket3.Client3" />
-      <module name="networking" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.soft1841.socket3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.UDPClient">
     <configuration name="Client4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.soft1841.socket4.Client4" />
       <module name="networking" />
@@ -436,6 +345,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UDPClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.soft1841.UDP.UDPClient" />
+      <module name="networking" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.soft1841.UDP.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UDPServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.soft1841.UDP.UDPServer" />
+      <module name="networking" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.soft1841.UDP.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="WorkClientApp1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.soft1841.work1.workClient1.WorkClientApp1" />
       <module name="networking" />
@@ -449,33 +384,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WorkServerApp1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.soft1841.work1.workServer1.WorkServerApp1" />
-      <module name="networking" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.soft1841.work1.workServer1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Application.Client3 (1)" />
       <item itemvalue="Application.WorkClientApp1" />
-      <item itemvalue="Application.WorkServerApp1" />
       <item itemvalue="Application.Server4" />
       <item itemvalue="Application.Client4" />
+      <item itemvalue="Application.UDPServer" />
+      <item itemvalue="Application.UDPClient" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.UDPClient" />
+        <item itemvalue="Application.UDPServer" />
+        <item itemvalue="Application.WorkClientApp1" />
         <item itemvalue="Application.Client4" />
         <item itemvalue="Application.Server4" />
-        <item itemvalue="Application.WorkServerApp1" />
-        <item itemvalue="Application.WorkClientApp1" />
-        <item itemvalue="Application.Client3 (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -577,7 +499,12 @@
       <workItem from="1557186907367" duration="5856000" />
       <workItem from="1557266429199" duration="1438000" />
       <workItem from="1557304021052" duration="12252000" />
-      <workItem from="1557352922556" duration="1411000" />
+      <workItem from="1557352922556" duration="1547000" />
+      <workItem from="1557360215001" duration="5000" />
+      <workItem from="1557365515464" duration="22000" />
+      <workItem from="1557365771360" duration="298000" />
+      <workItem from="1557399530703" duration="1547000" />
+      <workItem from="1557440557739" duration="1608000" />
     </task>
     <task id="LOCAL-00001" summary="Integer类的练习，进制转换底层">
       <created>1552355081254</created>
@@ -817,17 +744,24 @@
       <option name="project" value="LOCAL" />
       <updated>1557267785419</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="服务器向客户端发送非文本文件——控制台">
+      <created>1557354362000</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1557354362000</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="440596000" />
+    <option name="totallyTimeSpent" value="444212000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19967663" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21907842" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -894,7 +828,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="set接口基础程序,HashSet去重" />
     <MESSAGE value="File学习" />
     <MESSAGE value="文本复制操作" />
     <MESSAGE value="图片窗体程序" />
@@ -919,21 +852,14 @@
     <MESSAGE value="网络编程起步" />
     <MESSAGE value="客户端向服务器端发送文本数据——控制台版" />
     <MESSAGE value="服务器向客户端发送信息——控制台版" />
-    <option name="LAST_COMMIT_MESSAGE" value="服务器向客户端发送信息——控制台版" />
+    <MESSAGE value="服务器向客户端发送非文本文件——控制台" />
+    <option name="LAST_COMMIT_MESSAGE" value="服务器向客户端发送非文本文件——控制台" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/thread/src/com/soft1841/JoinDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exam/src/img/classical2.jpg" />
     <entry file="file://$PROJECT_DIR$/exam/src/img/ScienceB12.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -1146,10 +1072,78 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/networking/src/com/soft1841/imgSocket/Server3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="47" column="27" lean-forward="true" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/networking/src/com/soft1841/work1/workServer1/workServer1.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/networking/src/com/soft1841/work1/workServer1/workServer1.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/networking/src/com/soft1841/work1/workServer1/WorkServerApp1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/networking/src/com/soft1841/work1/workServer1/WorkServerController1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/networking/src/com/soft1841/socket4/Client4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/networking/src/com/soft1841/socket4/Server4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swing/src/com/soft1841/LoginFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/networking/src/com/soft1841/work1/workClient1/workClient1.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/networking/src/com/soft1841/work1/workClient1/WorkClientController1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1163,94 +1157,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/networking/src/com/soft1841/work1/workServer1/workServer1.fxml">
+    <entry file="file://$PROJECT_DIR$/networking/src/com/soft1841/UDP/UDPClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/networking/src/com/soft1841/work1/workServer1/WorkServerApp1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+        <state relative-caret-position="348">
+          <caret line="37" column="16" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/networking/src/com/soft1841/work1/workClient1/WorkClientController1.java">
+    <entry file="file://$PROJECT_DIR$/networking/src/com/soft1841/UDP/UDPServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+        <state relative-caret-position="1140">
+          <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/networking/src/com/soft1841/work1/workClient1/workClient1.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/networking/src/com/soft1841/socket4/Server4.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#615#616#0" expanded="true" />
-            <element signature="e#651#652#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/networking/src/com/soft1841/work1/workServer1/WorkServerController1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="45" column="13" lean-forward="true" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1161#1162#0" expanded="true" />
-            <element signature="e#1207#1208#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/networking/src/com/soft1841/imgSocket/Server3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="47" column="27" lean-forward="true" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/networking/src/com/soft1841/socket4/Client4.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/networking/src/com/soft1841/socket4/Server4.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#615#616#0" expanded="true" />
-            <element signature="e#651#652#0" expanded="true" />
           </folding>
         </state>
       </provider>
