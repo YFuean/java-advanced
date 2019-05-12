@@ -23,7 +23,7 @@ public class WorkClientController1{
 
     public void connect(ActionEvent actionEvent) {
         try {
-            client = new Socket("10.40.156.160",10086);
+            client = new Socket("10.30.144.234",10086);
             displayArea.setText("成功连上服务器");
         } catch (IOException e) {
             e.printStackTrace();

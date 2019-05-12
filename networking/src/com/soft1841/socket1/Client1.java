@@ -1,4 +1,4 @@
-package com.soft1841.socketThread;
+package com.soft1841.socket1;
 
 import java.io.BufferedWriter;
 import java.io.IOException;

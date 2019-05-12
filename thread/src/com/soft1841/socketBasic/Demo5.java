@@ -1,4 +1,4 @@
-package com.soft1841.basic;
+package com.soft1841.socketBasic;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

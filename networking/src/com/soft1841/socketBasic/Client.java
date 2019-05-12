@@ -1,7 +1,6 @@
-package com.soft1841.basic;
+package com.soft1841.socketBasic;
 
 import java.io.IOException;
-import java.io.InputStream;
 import java.net.Socket;
 
 /**

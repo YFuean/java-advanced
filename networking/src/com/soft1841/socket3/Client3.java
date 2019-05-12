@@ -1,24 +1,21 @@
 package com.soft1841.socket3;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.net.Socket;
 
-/**
- * 服务器向客户端发送信息——控制台版
- * client端，通过BufferedReader读取文本内容
- */
 public class Client3 {
     public static void main(String[] args) throws IOException {
-        Socket client = new Socket("localhost",10086);
+        Socket client = new Socket("10.40.233.120",10086);
         System.out.println("成功连上服务器");
-        //声明BufferedReader对象，通过客户端的输入流接收信息
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(client.getInputStream()));
-        String str = bufferedReader.readLine();
-        System.out.println("服务器端输出内容：" + str) ;
-        bufferedReader.close();
-        client.close();
-
+        //客户端需要发送的文件，先通过字节输入流读入字节数组
+        File file = new File("D:/me2.jpg");
+        byte[] bytes = new byte[(int) file.length()];
+        InputStream inputStream = new FileInputStream(file);
+        inputStream.read(bytes);
+        //将数组通过缓冲字节输出流传送出去
+        BufferedOutputStream bos = new BufferedOutputStream(client.getOutputStream());
+        bos.write(bytes);
+        inputStream.close();
+        bos.close();
     }
 }

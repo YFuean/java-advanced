@@ -1,4 +1,4 @@
-package com.soft1841.basic;
+package com.soft1841.socketBasic;
 
 /**
  * 通过继承Thread新建线程

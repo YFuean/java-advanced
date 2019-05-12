@@ -1,4 +1,4 @@
-package com.soft1841.basic;
+package com.soft1841.socketBasic;
 
 /**
  * 通过实现Runnable接口实现线程
