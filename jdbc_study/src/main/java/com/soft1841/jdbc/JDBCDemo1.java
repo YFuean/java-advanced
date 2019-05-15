@@ -3,7 +3,7 @@ package com.soft1841.jdbc;
 import java.sql.*;
 
 /**
- * jdbc起步练习
+ * jdbc起步练习，数据库查询
  */
 public class JDBCDemo1 {
     //JDBC驱动名及数据库连接URL
