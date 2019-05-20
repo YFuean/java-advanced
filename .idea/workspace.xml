@@ -7,12 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1609e9cb-487c-458a-aa14-2367e8375b3b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/design-patten/design-patten.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design-patten/src/com/soft1841/Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/singleton/Singleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/singleton/SingletonTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/factory/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/factory/FactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/factory/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/factory/Shape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/factory/ShapeFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/jdbc_study/target/" />
@@ -40,16 +39,16 @@
     <session id="2007900182">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="113" />
+          <entry key="project.closed" value="117" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="16" />
+          <entry key="project.open.time.1" value="18" />
           <entry key="project.open.time.12" value="5" />
           <entry key="project.open.time.13" value="6" />
           <entry key="project.open.time.14" value="7" />
           <entry key="project.open.time.15" value="13" />
-          <entry key="project.open.time.16" value="10" />
+          <entry key="project.open.time.16" value="11" />
           <entry key="project.open.time.17" value="10" />
-          <entry key="project.open.time.18" value="7" />
+          <entry key="project.open.time.18" value="8" />
           <entry key="project.open.time.19" value="3" />
           <entry key="project.open.time.2" value="9" />
           <entry key="project.open.time.20" value="1" />
@@ -66,7 +65,7 @@
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="115" />
+          <entry key="project.opened" value="119" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -81,7 +80,7 @@
           <entry key="GUI_DESIGNER_FORM" value="4" />
           <entry key="IDEA_MODULE" value="6" />
           <entry key="Image" value="68" />
-          <entry key="JAVA" value="594" />
+          <entry key="JAVA" value="603" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="XML" value="5" />
         </counts>
@@ -96,7 +95,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="95" />
-          <entry key="JAVA" value="49535" />
+          <entry key="JAVA" value="49814" />
           <entry key="PLAIN_TEXT" value="202" />
           <entry key="XML" value="366" />
         </counts>
@@ -106,25 +105,60 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/singleton/Singleton.java">
+        <entry file="file://$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/factory/Circle.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+              <folding>
+                <element signature="e#135#136#0" expanded="true" />
+                <element signature="e#171#172#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/factory/Rectangle.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+              <caret line="5" column="48" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
               <folding>
-                <element signature="e#211#212#0" expanded="true" />
-                <element signature="e#241#242#0" expanded="true" />
-                <element signature="e#278#279#0" expanded="true" />
-                <element signature="e#314#315#0" expanded="true" />
+                <element signature="e#123#124#0" expanded="true" />
+                <element signature="e#159#160#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/factory/ShapeFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+              <folding>
+                <element signature="e#116#117#0" expanded="true" />
+                <element signature="e#150#151#0" expanded="true" />
+                <element signature="e#203#204#0" expanded="true" />
+                <element signature="e#240#241#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/singleton/SingletonTest.java">
+        <entry file="file://$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/factory/FactoryTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/factory/Shape.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -136,6 +170,7 @@
       <list>
         <option value="FxmlFile" />
         <option value="CSS File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -146,12 +181,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/networking/src/com/soft1841/Server.java" />
-        <option value="$PROJECT_DIR$/networking/src/com/soft1841/Client.java" />
-        <option value="$PROJECT_DIR$/networking/src/com/soft1841/basic/Client.java" />
-        <option value="$PROJECT_DIR$/networking/src/com/soft1841/basic/Server.java" />
-        <option value="$PROJECT_DIR$/networking/src/com/soft1841/Client1.java" />
-        <option value="$PROJECT_DIR$/networking/src/com/soft1841/Client2.java" />
         <option value="$PROJECT_DIR$/networking/src/com/soft1841/basic1/Server1.java" />
         <option value="$PROJECT_DIR$/networking/src/com/soft1841/basic1/Client1.java" />
         <option value="$PROJECT_DIR$/networking/src/com/soft1841/socketThread/Server3.java" />
@@ -197,6 +226,12 @@
         <option value="$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/Singleton.java" />
         <option value="$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/SingletonTest.java" />
         <option value="$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/singleton/SingletonTest.java" />
+        <option value="$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/singleton/Singleton.java" />
+        <option value="$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/factory/Rectangle.java" />
+        <option value="$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/factory/ShapeFactory.java" />
+        <option value="$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/factory/Circle.java" />
+        <option value="$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/factory/Shape.java" />
+        <option value="$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/factory/FactoryTest.java" />
       </list>
     </option>
   </component>
@@ -245,8 +280,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -272,10 +305,20 @@
               <item name="soft1841" type="462c0819:PsiDirectoryNode" />
               <item name="designpatten" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="java-advanced" type="b2602c69:ProjectViewProjectNode" />
+              <item name="design-patten" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="soft1841" type="462c0819:PsiDirectoryNode" />
+              <item name="designpatten" type="462c0819:PsiDirectoryNode" />
+              <item name="factory" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -283,7 +326,7 @@
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="253" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558305630997" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558392200943" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/exam/jar/jsoup-1.11.3.jar!/" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -325,13 +368,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SingletonTest">
-    <configuration name="JDBCDemo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.soft1841.jdbc.JDBCDemo1" />
-      <module name="jdbc_study" />
+  <component name="RunManager" selected="Application.FactoryTest">
+    <configuration name="FactoryTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.soft1841.designpatten.factory.FactoryTest" />
+      <module name="design-patten" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.soft1841.jdbc.*" />
+          <option name="PATTERN" value="com.soft1841.designpatten.factory.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -339,8 +382,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JDBCDemo3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.soft1841.jdbc.JDBCDemo3" />
+    <configuration name="JDBCDemo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.soft1841.jdbc.JDBCDemo1" />
       <module name="jdbc_study" />
       <extension name="coverage">
         <pattern>
@@ -393,18 +436,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.JDBCDemo1" />
-      <item itemvalue="Application.JDBCDemo3" />
       <item itemvalue="Application.JDBCDemo4" />
       <item itemvalue="Application.URLDemo" />
       <item itemvalue="Application.SingletonTest" />
+      <item itemvalue="Application.FactoryTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FactoryTest" />
         <item itemvalue="Application.SingletonTest" />
         <item itemvalue="Application.URLDemo" />
         <item itemvalue="Application.JDBCDemo1" />
         <item itemvalue="Application.JDBCDemo4" />
-        <item itemvalue="Application.JDBCDemo3" />
       </list>
     </recent_temporary>
   </component>
@@ -532,7 +575,11 @@
       <workItem from="1558144370600" duration="20000" />
       <workItem from="1558161464424" duration="39000" />
       <workItem from="1558161664585" duration="1259000" />
-      <workItem from="1558304571957" duration="828000" />
+      <workItem from="1558304571957" duration="1258000" />
+      <workItem from="1558336674788" duration="1814000" />
+      <workItem from="1558354660329" duration="623000" />
+      <workItem from="1558360960093" duration="768000" />
+      <workItem from="1558391485654" duration="624000" />
     </task>
     <task id="LOCAL-00001" summary="Integer类的练习，进制转换底层">
       <created>1552355081254</created>
@@ -849,17 +896,24 @@
       <option name="project" value="LOCAL" />
       <updated>1558046650344</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="单例模式">
+      <created>1558305679920</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1558305679920</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="475868000" />
+    <option name="totallyTimeSpent" value="480127000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1738076" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19886823" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -926,7 +980,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="启动线程，读取网络图片" />
     <MESSAGE value="绘图线程" />
     <MESSAGE value="在JLabel中绘制图像" />
     <MESSAGE value="开启一个线程显示自然数递增，用暂停和回复按钮操作本线程" />
@@ -951,19 +1004,14 @@
     <MESSAGE value="jdbc起步练习，修改" />
     <MESSAGE value="向数据库增加信息" />
     <MESSAGE value="修改、删除数据" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改、删除数据" />
+    <MESSAGE value="单例模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="单例模式" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/networking/src/com/soft1841/basic1/Client1.java" />
-    <entry file="file://$PROJECT_DIR$/networking/src/com/soft1841/basic2/Client2.java" />
-    <entry file="file://$PROJECT_DIR$/networking/src/com/soft1841/work1/Demo.java" />
-    <entry file="file://$PROJECT_DIR$/networking/src/com/soft1841/work1/workClient1/workClient1.css" />
-    <entry file="file://$PROJECT_DIR$/networking/src/com/soft1841/work1/workServer1/workServer1.css" />
-    <entry file="file://$PROJECT_DIR$/networking/src/com/soft1841/work1/workServer1/workServer1.fxml" />
     <entry file="file://$PROJECT_DIR$/networking/src/com/soft1841/work1/workServer1/WorkServerApp1.java" />
     <entry file="file://$PROJECT_DIR$/networking/src/com/soft1841/work1/workServer1/WorkServerController1.java" />
     <entry file="file://$PROJECT_DIR$/swing/src/com/soft1841/LoginFrame.java">
@@ -1131,20 +1179,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/draw/src/com/soft1841/DrawImageTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-266">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/draw/src/com/soft1841/ComponentPaintFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jdbc_study/src/main/java/com/soft1841/jdbc/JDBCDemo2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -1180,13 +1214,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/exam/src/com/soft1841/sinaReading/HomePageJFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="328" column="42" selection-start-line="328" selection-start-column="42" selection-end-line="328" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/Demo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1203,21 +1230,92 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/singleton/Singleton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-          <folding>
-            <element signature="e#211#212#0" expanded="true" />
-            <element signature="e#241#242#0" expanded="true" />
-            <element signature="e#278#279#0" expanded="true" />
-            <element signature="e#314#315#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="30">
+          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/singleton/SingletonTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/draw/src/com/soft1841/DrawImageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam/src/com/soft1841/sinaReading/HomePageJFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="328" column="42" selection-start-line="328" selection-start-column="42" selection-end-line="328" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/draw/src/com/soft1841/ComponentPaintFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thread/src/com/soft1841/FlyPig/FlyPigJFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="53" column="21" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/factory/Circle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="e#135#136#0" expanded="true" />
+            <element signature="e#171#172#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/factory/Rectangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="5" column="48" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
+          <folding>
+            <element signature="e#123#124#0" expanded="true" />
+            <element signature="e#159#160#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/factory/Shape.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/factory/ShapeFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+          <folding>
+            <element signature="e#116#117#0" expanded="true" />
+            <element signature="e#150#151#0" expanded="true" />
+            <element signature="e#203#204#0" expanded="true" />
+            <element signature="e#240#241#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/factory/FactoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
         </state>
       </provider>
     </entry>
