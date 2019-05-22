@@ -7,10 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1609e9cb-487c-458a-aa14-2367e8375b3b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/adapter/AdapterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/adapter/Sports.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/adapter/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/adapter/Study.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/proxy/Proxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/proxy/ProxyPattern.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/proxy/RealSubject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/proxy/Subject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/src/com/java/util/DateDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/jdbc_study/target/" />
@@ -38,20 +39,20 @@
     <session id="2007900182">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="124" />
+          <entry key="project.closed" value="128" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="21" />
+          <entry key="project.open.time.1" value="22" />
           <entry key="project.open.time.12" value="6" />
           <entry key="project.open.time.13" value="6" />
           <entry key="project.open.time.14" value="8" />
           <entry key="project.open.time.15" value="13" />
-          <entry key="project.open.time.16" value="11" />
+          <entry key="project.open.time.16" value="12" />
           <entry key="project.open.time.17" value="10" />
           <entry key="project.open.time.18" value="8" />
-          <entry key="project.open.time.19" value="3" />
+          <entry key="project.open.time.19" value="4" />
           <entry key="project.open.time.2" value="10" />
           <entry key="project.open.time.20" value="1" />
-          <entry key="project.open.time.21" value="2" />
+          <entry key="project.open.time.21" value="3" />
           <entry key="project.open.time.22" value="3" />
           <entry key="project.open.time.23" value="2" />
           <entry key="project.open.time.24" value="5" />
@@ -64,7 +65,7 @@
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="126" />
+          <entry key="project.opened" value="130" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -79,7 +80,7 @@
           <entry key="GUI_DESIGNER_FORM" value="5" />
           <entry key="IDEA_MODULE" value="6" />
           <entry key="Image" value="68" />
-          <entry key="JAVA" value="614" />
+          <entry key="JAVA" value="619" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="XML" value="5" />
         </counts>
@@ -94,8 +95,8 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="95" />
-          <entry key="JAVA" value="50042" />
-          <entry key="PLAIN_TEXT" value="202" />
+          <entry key="JAVA" value="50357" />
+          <entry key="PLAIN_TEXT" value="204" />
           <entry key="XML" value="366" />
         </counts>
       </usages-collector>
@@ -104,45 +105,45 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/adapter/Study.java">
+        <entry file="file://$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/proxy/Subject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+            <state relative-caret-position="90">
+              <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/adapter/Sports.java">
+        <entry file="file://$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/proxy/RealSubject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+            <state relative-caret-position="150">
+              <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+              <folding>
+                <element signature="e#127#128#0" expanded="true" />
+                <element signature="e#144#145#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/adapter/Student.java">
+        <entry file="file://$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/proxy/Proxy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-120">
-              <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+            <state relative-caret-position="270">
+              <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+              <folding>
+                <element signature="e#297#298#0" expanded="true" />
+                <element signature="e#315#316#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/adapter/AdapterTest.java">
+        <entry file="file://$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/proxy/ProxyPattern.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
-              <folding>
-                <element signature="e#180#314#0" expanded="true" />
-                <element signature="e#313#314#0" expanded="true" />
-                <element signature="e#468#469#0" expanded="true" />
-                <element signature="e#528#529#0" expanded="true" />
-                <element signature="e#590#591#0" expanded="true" />
-                <element signature="e#650#651#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="90">
+              <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -165,11 +166,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/networking/src/com/soft1841/socket/Client4.java" />
-        <option value="$PROJECT_DIR$/networking/src/com/soft1841/socket/Server2.java" />
-        <option value="$PROJECT_DIR$/networking/src/com/soft1841/socketThread/Server1.java" />
-        <option value="$PROJECT_DIR$/networking/src/com/soft1841/imgSocket/Client3.java" />
-        <option value="$PROJECT_DIR$/networking/src/com/soft1841/socket3/Client3.java" />
         <option value="$PROJECT_DIR$/networking/src/com/soft1841/work1/workClient1/WorkCilentApp1.java" />
         <option value="$PROJECT_DIR$/networking/src/com/soft1841/work1/workClient1/workClient1.fxml" />
         <option value="$PROJECT_DIR$/networking/src/com/soft1841/work1/workClient1/workClient1.css" />
@@ -216,6 +212,11 @@
         <option value="$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/adapter/Sports.java" />
         <option value="$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/adapter/Student.java" />
         <option value="$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/adapter/AdapterTest.java" />
+        <option value="$PROJECT_DIR$/util/src/com/java/util/DateDemo.java" />
+        <option value="$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/proxy/Subject.java" />
+        <option value="$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/proxy/RealSubject.java" />
+        <option value="$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/proxy/Rroxy.java" />
+        <option value="$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/proxy/ProxyPattern.java" />
       </list>
     </option>
   </component>
@@ -263,6 +264,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -288,12 +291,18 @@
               <item name="soft1841" type="462c0819:PsiDirectoryNode" />
               <item name="designpatten" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="java-advanced" type="b2602c69:ProjectViewProjectNode" />
+              <item name="design-patten" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="soft1841" type="462c0819:PsiDirectoryNode" />
+              <item name="designpatten" type="462c0819:PsiDirectoryNode" />
+              <item name="proxy" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -301,7 +310,7 @@
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="253" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558477332129" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558564497980" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/exam/jar/jsoup-1.11.3.jar!/" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -343,13 +352,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.AdapterTest">
+  <component name="RunManager" selected="Application.ProxyPattern">
     <configuration name="AdapterTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.soft1841.designpatten.adapter.AdapterTest" />
       <module name="design-patten" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.soft1841.designpatten.adapter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DateDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.java.util.DateDemo" />
+      <module name="util" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.java.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -370,12 +392,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JDBCDemo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.soft1841.jdbc.JDBCDemo1" />
-      <module name="jdbc_study" />
+    <configuration name="ProxyPattern" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.soft1841.designpatten.proxy.ProxyPattern" />
+      <module name="design-patten" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.soft1841.jdbc.*" />
+          <option name="PATTERN" value="com.soft1841.designpatten.proxy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -396,33 +418,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="URLDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.soft1841.URL.URLDemo" />
-      <module name="networking" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.soft1841.URL.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Application.JDBCDemo1" />
-      <item itemvalue="Application.URLDemo" />
       <item itemvalue="Application.SingletonTest" />
       <item itemvalue="Application.FactoryTest" />
       <item itemvalue="Application.AdapterTest" />
+      <item itemvalue="Application.DateDemo" />
+      <item itemvalue="Application.ProxyPattern" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ProxyPattern" />
+        <item itemvalue="Application.DateDemo" />
         <item itemvalue="Application.AdapterTest" />
         <item itemvalue="Application.FactoryTest" />
         <item itemvalue="Application.SingletonTest" />
-        <item itemvalue="Application.URLDemo" />
-        <item itemvalue="Application.JDBCDemo1" />
       </list>
     </recent_temporary>
   </component>
@@ -561,7 +570,11 @@
       <workItem from="1558413521000" duration="613000" />
       <workItem from="1558417608264" duration="1576000" />
       <workItem from="1558423719875" duration="506000" />
-      <workItem from="1558476498137" duration="747000" />
+      <workItem from="1558476498137" duration="887000" />
+      <workItem from="1558478238013" duration="217000" />
+      <workItem from="1558500934413" duration="30000" />
+      <workItem from="1558519485827" duration="960000" />
+      <workItem from="1558563728186" duration="699000" />
     </task>
     <task id="LOCAL-00001" summary="Integer类的练习，进制转换底层">
       <created>1552355081254</created>
@@ -892,17 +905,24 @@
       <option name="project" value="LOCAL" />
       <updated>1558392219002</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="适配器模式">
+      <created>1558477354140</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1558477354140</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="486827000" />
+    <option name="totallyTimeSpent" value="488873000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16168149" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2069523" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -911,7 +931,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32871974" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.19723183" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33391005" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39965397" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -969,7 +989,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="在JLabel中绘制图像" />
     <MESSAGE value="开启一个线程显示自然数递增，用暂停和回复按钮操作本线程" />
     <MESSAGE value="交通灯" />
     <MESSAGE value="组件绘图" />
@@ -994,36 +1013,14 @@
     <MESSAGE value="修改、删除数据" />
     <MESSAGE value="单例模式" />
     <MESSAGE value="工厂模式" />
-    <option name="LAST_COMMIT_MESSAGE" value="工厂模式" />
+    <MESSAGE value="适配器模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="适配器模式" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/networking/src/com/soft1841/work1/workClient1/WorkClientController1.java" />
-    <entry file="file://$PROJECT_DIR$/networking/src/com/soft1841/work1/workClient1/WorkClientApp1.java" />
-    <entry file="file://$PROJECT_DIR$/networking/src/com/soft1841/socketBasic/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/networking/src/com/soft1841/socket1/Server1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="44" lean-forward="true" selection-start-line="13" selection-end-line="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/networking/src/com/soft1841/socket1/Client1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="25" column="1" lean-forward="true" selection-start-line="12" selection-end-line="25" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/networking/src/com/soft1841/socket2/Server2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -1300,23 +1297,61 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/adapter/Student.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-120">
-          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+        <state relative-caret-position="150">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/adapter/AdapterTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+        <state relative-caret-position="60">
+          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/src/com/java/util/DateDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
           <folding>
-            <element signature="e#180#314#0" expanded="true" />
-            <element signature="e#313#314#0" expanded="true" />
-            <element signature="e#468#469#0" expanded="true" />
-            <element signature="e#528#529#0" expanded="true" />
-            <element signature="e#590#591#0" expanded="true" />
-            <element signature="e#650#651#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/proxy/Proxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+          <folding>
+            <element signature="e#297#298#0" expanded="true" />
+            <element signature="e#315#316#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/proxy/RealSubject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+          <folding>
+            <element signature="e#127#128#0" expanded="true" />
+            <element signature="e#144#145#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/proxy/Subject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design-patten/src/com/soft1841/designpatten/proxy/ProxyPattern.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
         </state>
       </provider>
     </entry>
