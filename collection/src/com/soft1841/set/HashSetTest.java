@@ -29,10 +29,10 @@ public class HashSetTest {
         System.out.println("Iterator迭代器遍历");
         Iterator<String> iterator = set.iterator();
         while (iterator.hasNext()){
-            System.out.print(iterator.next() + "   ");
+            System.out.println(iterator.next() + "   ");
         }
         //3.Lambda表达式遍历set集合
         System.out.println("Lambda表达式遍历");
-        set.forEach(s -> System.out.print(s));
+        set.forEach(s -> System.out.println(s));
     }
 }

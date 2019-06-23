@@ -33,8 +33,8 @@ public class JDBCDemo1 {
             int id = rs.getInt("id");
             String name = rs.getString("name");
             int age = rs.getInt("age");
-            System.out.print("ID:" + id);
             //输出数据
+            System.out.print("ID:" + id);
             System.out.print(",姓名：" +name);
             System.out.print(",年纪：" + age);
             System.out.print("\n");

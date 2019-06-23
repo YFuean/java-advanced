@@ -3,7 +3,7 @@ package com.soft1841;
 import java.io.*;
 
 /**
- * 缓冲字节流学习
+ * 缓冲字符流学习
  * @author yuefan
  * 2019.4.4
  */
